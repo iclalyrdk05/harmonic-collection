@@ -1,5 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+.text-box {
+  background-color: #8B0000; /* Dark red color */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 p {
-    color: rgb(134, 134, 207);
+    color: rgb(191, 191, 209);
     font-family: sans-serif;
     line-height: 1.25;
   }
@@ -7,5 +23,13 @@ p {
 
     
     color: blueviolet;
+
+ }
+ 
+ h2 {
+  background-color: #8B0000;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
 
  }
