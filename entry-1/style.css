@@ -26,10 +26,30 @@ p {
 
  }
  
- h2 {
+ h1 {
   background-color: #8B0000;
   padding: 20px;
   width: 150px;
   text-align: center;
 
  }
+
+ h2 {
+  background-color: #0e3080;
+  padding: 20px;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto; /* Centers the box */
+  color: rgba(255, 255, 255, 0.55);
+
+}
+
+h1 {
+  background-color: #8B0000;
+  padding: 20px;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto; /* Centers the box */
+  color: rgba(255, 255, 255, 0.555);
+
+}
