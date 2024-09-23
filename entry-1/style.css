@@ -40,16 +40,9 @@ p {
   width: 450px;
   text-align: center;
   margin: 0 auto; /* Centers the box */
-  color: rgba(255, 255, 255, 0.55);
+  color: #ffffff8c;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-h1 {
-  background-color: #8B0000;
-  padding: 20px;
-  width: 450px;
-  text-align: center;
-  margin: 0 auto; /* Centers the box */
-  color: rgba(255, 255, 255, 0.555);
 
-}
