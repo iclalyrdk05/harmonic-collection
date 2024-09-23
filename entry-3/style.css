@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lora', serif;
     background-color: #FFEFDB; /* Pastel orange background */
     margin: 0;
     padding: 20px;
@@ -16,6 +16,7 @@ body {
 }
 
 h1, h2 {
+    font-family: 'Playfair Display', serif;
     color: #FF8C69; /* Soft orange-pink for headers */
     text-align: center;
 }
