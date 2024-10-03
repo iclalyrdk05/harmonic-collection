@@ -18,11 +18,7 @@ p {
     color: rgb(191, 191, 209);
     font-family: sans-serif;
     line-height: 1.25;
-  }
-
-
     
-    color: blueviolet;
 
  }
  
@@ -45,8 +41,6 @@ p {
 
 }
 
-
-/* Style the links inside the sidenav */
 #mySidenav a {
   position: absolute; /* Position them relative to the browser window */
   left: -80px; /* Position them outside of the screen */
