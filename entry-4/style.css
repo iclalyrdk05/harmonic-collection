@@ -1,68 +1,94 @@
 /* Side navigation styles */
 .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: #ffd966; /* Lemonade yellow */
-    padding-top: 20px;
-  }
-  
-  .sidenav a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #333;
-    display: block;
-    margin: 10px 0;
-  }
-  
-  .sidenav a:hover {
-    background-color: #f4a261;
-    color: white;
-  }
-  
-  /* Ensure the content is shifted to the right to make space for the sidenav */
-  .content {
-    margin-left: 220px; /* Space for the sidenav */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  body {
-    font-family: 'Lora', serif;
-    background-color: #FFEFDB; /* Pastel orange background */
-    margin: 0;
-    padding: 20px;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #E1E48E; /* Lemonade yellow */
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #b1624a; /* Soft orange-pink for nav links */
+  font-weight: bold; /* Make the sidenav text bold */
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  background-color: #ffd966; /* Pastel pink on hover */
+  color: white;
+  border-radius: 4px;
+}
+
+/* Ensure the content is shifted to the right to make space for the sidenav */
+.content {
+  margin-left: 450px; /* Increased margin to shift content more to the right */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align content boxes to the right */
+  margin-top: 50px;
+  width: 80%;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background-color: #FFEFDB; /* Pastel orange background */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Title aligned with the boxes */
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #b1624a; /* Soft orange-pink for title */
+  text-align: right; /* Align title to the right */
+  margin-right: 530px; /* Move the title right to match the box positioning */
+  margin-bottom: 50px;
 }
 
 .text-box {
-    background-color: #FFB6C1; /* Pastel pink background */
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+  background-color: #ffd966; /* Pastel pink background */
+  color: #5f3528;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%; /* Slightly smaller width */
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  right: -250px; /* Move the box further to the right */
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-    color: #FF8C69; /* Soft orange-pink for headers */
-    text-align: center;
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #b1624a; /* Soft orange-pink for headers */
 }
 
 nav a {
-    color: #FF8C69; /* Soft orange-pink for nav links */
-    margin-right: 10px;
-    text-align: center;
+  color: #FF8C69; /* Soft orange-pink for nav links */
+  margin-right: 10px;
+  text-align: center;
 }
 
 img {
-    border-radius: 8px;
+  border-radius: 8px;
+  position: relative;
 }
 
-  
+/* Adjust images to be placed outside the box */
+.image-right {
+  margin-left: 20px;
+  position: absolute;
+  right: 250px; /* Move the image further to the right of the first box */
+}
+
+.image-left {
+  margin-left: 20px;
+  position: absolute;
+  right: 250px; /* Move the image further to the right of the second box */
+}
