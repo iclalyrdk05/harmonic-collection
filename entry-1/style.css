@@ -1,79 +1,109 @@
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #0e3080; /* Lemonade yellow */
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #b1624a; /* Soft orange-pink for nav links */
+  font-weight: bold; /* Make the sidenav text bold */
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  background-color: #ffd966; /* Pastel pink on hover */
+  color: white;
+  border-radius: 4px;
+}
+
+/* Ensure the content is shifted to the right to make space for the sidenav */
+.content {
+  margin-left: 450px; /* Increased margin to shift content more to the right */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align content boxes to the right */
+  margin-top: 50px;
+  width: 80%;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Lora', serif;
+  background-color: #f0f0f0 /* Pastel orange background */
   margin: 0;
   padding: 20px;
 }
+
+/* Title aligned with the boxes */
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #b1624a; /* Soft orange-pink for title */
+  text-align: right; /* Align title to the right */
+  margin-right: 530px; /* Move the title right to match the box positioning */
+  margin-bottom: 50px;
+}
+
 .text-box {
-  background-color: #8B0000; /* Dark red color */
-  color: white;
+  background-color: #8B0000; /* Pastel pink background */
+  color: #ead4cd;
   padding: 20px;
   border-radius: 8px;
-  width: 80%;
-  margin: 0 auto;
+  width: 70%; /* Slightly smaller width */
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  right: -250px; /* Move the box further to the right */
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #b1624a; /* Soft orange-pink for headers */
+}
+
+nav a {
+  color: #FF8C69; /* Soft orange-pink for nav links */
+  margin-right: 10px;
   text-align: center;
 }
 
-p {
-    color: rgb(191, 191, 209);
-    font-family: sans-serif;
-    line-height: 1.25;
-    
+img {
+  border-radius: 8px;
+  position: relative;
+}
 
- }
- 
- h1 {
-  background-color: #8B0000;
+/* Adjust images to be placed outside the box */
+.image-right {
+  margin-left: 20px;
+  position: absolute;
+  right: 250px; /* Move the image further to the right of the first box */
+}
+
+.image-left {
+  margin-left: 20px;
+  position: absolute;
+  right: 250px; /* Move the image further to the right of the second box */
+}
+
+/* Keyframes for the animation */
+@keyframes example {
+  from { background-color: #8B0000; }
+  to { background-color: #0e3080; }
+}
+
+/* Apply animation to the title */
+.animated-title {
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; /* To loop the animation */
   padding: 20px;
-  width: 150px;
+  color: white;
   text-align: center;
-
- }
-
- h2 {
-  background-color: #0e3080;
-  padding: 20px;
-  width: 450px;
-  text-align: center;
-  margin: 0 auto; /* Centers the box */
-  color: #ffffff8c;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-#mySidenav a {
-  position: absolute; /* Position them relative to the browser window */
-  left: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-}
-
-#mySidenav a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-/* The about link: 20px from the top with a green background */
-#about {
-  top: 20px;
-  background-color: #04AA6D;
-}
-
-#blog {
-  top: 80px;
-  background-color: #2196F3; /* Blue */
-}
-
-#projects {
-  top: 140px;
-  background-color: #f44336; /* Red */
-}
-
-#contact {
-  top: 200px;
-  background-color: #555 /* Light Black */
 }
