@@ -100,7 +100,7 @@ img {
   to { background-color: #E1E48E; }
 }
 
-/* Apply animation to the title */
+
 .animated-title {
   animation-name: example;
   animation-duration: 10s;
