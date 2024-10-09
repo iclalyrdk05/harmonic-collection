@@ -1,11 +1,11 @@
-/* Side navigation styles */
+
 .sidenav {
   height: 100%;
   width: 200px;
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #E1E48E; /* Lemonade yellow */
+  background-color: #E1E48E; 
   padding-top: 20px;
 }
 
@@ -13,65 +13,63 @@
   padding: 10px 15px;
   text-decoration: none;
   font-size: 18px;
-  color: #b1624a; /* Soft orange-pink for nav links */
-  font-weight: bold; /* Make the sidenav text bold */
+  color: #b1624a; 
+  font-weight: bold; 
   display: block;
   margin: 10px 0;
   text-align: center;
 }
 
 .sidenav a:hover {
-  background-color: #ffd966; /* Pastel pink on hover */
+  background-color: #ffd966;
   color: white;
   border-radius: 4px;
 }
 
-/* Ensure the content is shifted to the right to make space for the sidenav */
 .content {
-  margin-left: 450px; /* Increased margin to shift content more to the right */
-  display: flex;
+  margin-left: 450px; 
   flex-direction: column;
-  align-items: flex-end; /* Align content boxes to the right */
+  align-items: flex-end; 
   margin-top: 50px;
   width: 80%;
 }
 
 body {
   font-family: 'Lora', serif;
-  background-color: #FFEFDB; /* Pastel orange background */
+  background-color: #FFEFDB; 
   margin: 0;
   padding: 20px;
 }
 
-/* Title aligned with the boxes */
+
 h1 {
   font-family: 'Playfair Display', serif;
-  color: #b1624a; /* Soft orange-pink for title */
-  text-align: right; /* Align title to the right */
-  margin-right: 30px; /* Move the title right to match the box positioning */
+  color: #b1624a; 
+  text-align: right; 
+  margin-right: 30px; 
   margin-bottom: 30px;
 
 }
 
 .text-box {
-  background-color: #ffd966; /* Pastel pink background */
+  background-color: #ffd966; 
   color: #5f3528;
   padding: 20px;
   border-radius: 8px;
-  width: 70%; /* Slightly smaller width */
+  width: 70%; 
   margin-bottom: 20px;
   text-align: center;
   position: relative;
-  right: -250px; /* Move the box further to the right */
+  right: -250px; 
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
-  color: #b1624a; /* Soft orange-pink for headers */
+  color: #b1624a; 
 }
 
 nav a {
-  color: #FF8C69; /* Soft orange-pink for nav links */
+  color: #FF8C69; 
   margin-right: 10px;
   text-align: center;
 }
@@ -81,20 +79,18 @@ img {
   position: relative;
 }
 
-/* Adjust images to be placed outside the box */
 .image-right {
   margin-left: 20px;
   position: absolute;
-  right: 250px; /* Move the image further to the right of the first box */
+  right: 250px; 
 }
 
 .image-left {
   margin-left: 20px;
   position: absolute;
-  right: 250px; /* Move the image further to the right of the second box */
-}
+  right: 250px; 
 
-/* Keyframes for the animation */
+
 @keyframes example {
   from { background-color: #ffd966; }
   to { background-color: #E1E48E; }
@@ -104,11 +100,9 @@ img {
 .animated-title {
   animation-name: example;
   animation-duration: 10s;
-  animation-iteration-count: infinite; /* To loop the animation */
+  animation-iteration-count: infinite; 
   padding: 20px;
   color: white;
   text-align: center;
   
-  
 }
-  
