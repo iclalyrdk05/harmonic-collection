@@ -105,3 +105,13 @@ img {
   text-align: center;
   
 }
+
+.content {
+  background-image: url(images/matcha\ web\ page.jpg);
+  background-size: cover; /* Adjust this based on how you want the image to fit */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat;
+  margin-left: 200px; /* Start the background after the sidenav */
+  width: calc(100vw - 200px); /* Adjust to exclude sidenav width */
+  height: 100vh; /* Full height */
+}
