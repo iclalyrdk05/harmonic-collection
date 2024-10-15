@@ -4,7 +4,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #E1E48E; /* Lemonade yellow */
+    background-color: #E1E48E; 
     padding-top: 20px;
   }
   
@@ -12,54 +12,56 @@
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
-    color: #b1624a; /* Soft orange-pink for nav links */
-    font-weight: bold; /* Make the sidenav text bold */
+    color: #b1624a; 
+    font-weight: bold; 
     display: block;
     margin: 10px 0;
     text-align: center;
   }
   
   .sidenav a:hover {
-    background-color: #ffd966; /* Pastel pink on hover */
+    background-color: #ffd966;
     color: white;
     border-radius: 4px;
   }
   
-  /* Ensure the content is shifted to the right to make space for the sidenav */
   .content {
-    margin-left: 450px; /* Increased margin to shift content more to the right */
+    margin-left: 450px; 
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align content boxes to the right */
+    align-items: flex-end; 
     margin-top: 50px;
     width: 80%;
   }
   
 body {
     font-family: 'Lora', serif;
-    background-color: #FFEFDB; /* Pastel orange background */
+    background-color: #FFEFDB; 
     margin: 0;
     padding: 20px;
 }
 
 .text-box {
-    background-color: #FFB6C1; /* Pastel pink background */
+    background-color: #FFB6C1; 
     color: white;
     padding: 20px;
     border-radius: 8px;
-    width: 80%;
-    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 20px;
     text-align: center;
+    position: relative;
+    right: -250px; 
 }
+
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
-    color: #FF8C69; /* Soft orange-pink for headers */
+    color: #FF8C69; 
     text-align: center;
 }
 
 nav a {
-    color: #FF8C69; /* Soft orange-pink for nav links */
+    color: #FF8C69; 
     margin-right: 10px;
     text-align: center;
 }

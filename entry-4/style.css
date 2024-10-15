@@ -44,9 +44,10 @@ body {
 h1 {
   font-family: 'Playfair Display', serif;
   color: #b1624a; 
-  text-align: right;
-  margin-right: 30px; 
+  text-align: center;
+  margin-right: 20px; 
   margin-bottom: 30px;
+  position: relative;
 }
 
 .text-box {
@@ -54,20 +55,20 @@ h1 {
   color: #5f3528;
   padding: 20px;
   border-radius: 8px;
-  width: 70%; 
+  width: 80%; 
   margin-bottom: 20px;
   text-align: center;
   position: relative;
   right: -250px; 
 }
 
+
 h2 {
   font-family: 'Playfair Display', serif;
-  color: #b1624a; /* Soft orange-pink for sub-headers */
-}
+  color: #b1624a; 
 
 nav a {
-  color: #FF8C69; /* Soft orange-pink for nav links */
+  color: #FF8C69; 
   margin-right: 10px;
   text-align: center;
 }
@@ -80,13 +81,13 @@ img {
 .image-right {
   margin-left: 20px;
   position: absolute;
-  right: 250px; /* Aligns images to the right */
+  right: 250px; 
 }
 
 .image-left {
   margin-left: 20px;
   position: absolute;
-  right: 250px; /* Aligns images to the right */
+  right: 250px; 
 }
 
 
@@ -98,8 +99,8 @@ img {
 .animated-title {
   animation-name: example;
   animation-duration: 10s;
-  animation-iteration-count: infinite; /* Loop the animation infinitely */
+  animation-iteration-count: infinite; 
   padding: 20px;
-  color: white;
+  color: #FF8C69;
   text-align: center;
 }

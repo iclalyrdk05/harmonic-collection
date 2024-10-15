@@ -1,10 +1,17 @@
+body {
+  font-family: 'Lora', serif; 
+  background-color: #f5f5dc; 
+  margin: 0;
+  padding: 20px;
+}
+
 .sidenav {
   height: 100%;
   width: 200px;
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #E1E48E; 
+  background-color: #E1E48E;
   padding-top: 20px;
 }
 
@@ -13,7 +20,7 @@
   text-decoration: none;
   font-size: 18px;
   color: #b1624a; 
-  font-weight: bold; 
+  font-weight: bold;
   display: block;
   margin: 10px 0;
   text-align: center;
@@ -25,23 +32,41 @@
   border-radius: 4px;
 }
 
-
-/* Ensure the content is shifted to the right to make space for the sidenav */
-.content {
-  margin-left: 450px; /* Increased margin to shift content more to the right */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Align content boxes to the right */
-  margin-top: 50px;
-  width: 80%;
-}
 h1 {
-    background-color: #694606;
-    padding: 20px;
-    width: 450px;
-    text-align: center;
-    margin: 0 auto; /* Centers the box */
-    color: rgba(255, 255, 255, 0.555);
-  
-  }
-  
+  font-family: 'Playfair Display', serif; 
+  background-color: #694606;
+  padding: 20px;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto; 
+  color: rgba(255, 255, 255, 0.555);
+}
+
+.text-box {
+  background-color: #6F4E37; 
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  right: -250px; 
+}
+
+h2 {
+  font-family: 'Playfair Display', serif; 
+  color: #a79b92; 
+  text-align: center;
+}
+
+
+.spacer {
+  margin: 20px 0;
+}
+
+nav a {
+  color: #6F4E37; 
+  margin-right: 10px;
+  text-align: center;
+}
