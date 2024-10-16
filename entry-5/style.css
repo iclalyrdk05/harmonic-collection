@@ -60,10 +60,8 @@
   transform: translateY(-50%);
 }
 
-
-
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Notable', sans-serif;
   color: #d6a393;
   font-size: 48px;
   text-align: center;
