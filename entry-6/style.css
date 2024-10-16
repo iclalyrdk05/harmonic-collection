@@ -1,9 +1,36 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e74c3c; /* Deep red background */
     color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #E1E48E; 
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #b1624a;
+    font-weight: bold; 
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    background-color: #ffd966;
+    color: white;
+    border-radius: 4px;
 }
 
 header {
@@ -13,22 +40,34 @@ header {
 }
 
 h1 {
+    font-family: 'Marck Script', cursive; /* Decorative font for title */
+    font-size: 2.5em;
     margin: 0;
 }
 
 main {
     padding: 20px;
+    margin-left: 220px; /* Adjusted for sidenav width */
 }
 
-section {
-    margin: 20px 0;
-    padding: 10px;
+.turnip-box {
     background-color: #8e44ad; /* Purple background for sections */
-    border-radius: 5px;
+    border-radius: 25px; /* Rounded edges for the turnip shape */
+    padding: 20px;
+    margin: 20px auto; /* Center the boxes */
+    width: 70%; /* Set a width for the boxes */
+    text-align: left; /* Align text to the left */
 }
 
-h2 {
+.turnip-box h2 {
+    font-family: 'Marck Script', cursive; /* Decorative font for subtitles */
+    font-size: 1.8em;
     margin-top: 0;
+}
+
+.turnip-box p,
+.turnip-box ul {
+    font-size: 1.2em;
 }
 
 .image-section {
@@ -43,8 +82,4 @@ h2 {
     margin: 0 10px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #c0392b; /* Darker shade of red */
-}
+
