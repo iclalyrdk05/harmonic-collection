@@ -3,116 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Şalgam Culture</title>
+    <title>Herbal Tea Ceremonies</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* Scrolling Text Styles */
+        .scrolling-text {
+            height: 50px;	
+            overflow: hidden;
+            position: relative;
+            margin: 20px 0; /* Adjust margin as needed */
+            background-color: #f9f9f9; /* Background color for visibility */
+            padding: 10px; /* Padding for aesthetics */
+            border: 1px solid #ccc; /* Optional border */
+        }
+
+        .scrolling-text h3 {
+            font-size: 3em;
+            color: limegreen;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            /* Starting position */
+            transform:translateX(100%);
+            /* Apply animation to this element */	
+            animation: scrolling 15s linear infinite;
+        }
+
+        /* Move it (define the animation) */
+        @keyframes scrolling {
+            0%   { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Herbal Tea Ceremonies</h1>
-        <h2>Written and Photographed by Mary Plantwalker</h2>
-    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="../homepage/" id="about">Home</a>
+        <a href="../entry-1/" id="about">Turkish tea</a>
+        <a href="../entry-2/" id="blog">Espresso</a>
+        <a href="../entry-3/" id="projects">Cocktails</a>
+        <a href="../entry-4/" id="contact">Lemonade</a>
+        <a href="../entry-5/" id="contact">Matcha</a>
+        <a href="../entry-6/" id="contact">Salgam</a>
+      </div>
+    
+    <!-- Top Navigation -->
+<div class="topnav" id="myTopnav">
+    <a href="#hero" class="active">Home</a>
+    <a href="#section1">The Essence of Tea Ceremonies</a>
+    <a href="#section2">A History of Tea Culture</a>
+    <a href="#section3">Creating Your Own Ritual</a>
+    <a href="#section4">Appalachian Tea Ceremony</a>
+    <a href="#section5">Hosting Your Tea Ceremony</a>
+    <a href="#section6">Final Thoughts</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 
-    <section class="hero">
-        <img src="banner-image.jpg" alt="Calming woodland or herbal-themed photograph">
-        <h2>Discover the beauty of tea and plant-based rituals</h2>
-    </section>
 
-    <section class="introduction">
-        <p>"Herbal Tea Ceremonies are a delightful way to find beauty in the everyday. By slowing down and connecting with plant allies, we open ourselves to heartfelt connections with ourselves and others. Creating your own herbal tea ceremony can transform any day into a meaningful experience."</p>
-    </section>
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
 
-    <section class="essence-of-tea">
-        <h3>True Tea</h3>
-        <p>"Traditional tea ceremonies often honor the Camellia sinensis plant, known as true tea, with varieties like white, green, oolong, and black. Due to tea's widespread popularity, it has inspired herbal, or wild, tea ceremonies, creating new rituals that merge ancient traditions with modern-day lifestyles."</p>
-    </section>
-
-    <section class="history-of-tea">
-        <h3>Origins & Traditions</h3>
-        <p>"Originating in China and cherished for thousands of years, tea’s journey across cultures led to unique ceremonies worldwide. From Japanese Zen-inspired rituals to Tibetan butter tea, each culture imbued tea with its own rich symbolism."</p>
-        
-        <div class="image-carousel">
-            <div class="carousel-container">
-                <img src="chinese-tea-ceremony.jpg" alt="Chinese tea ceremony">
-                <img src="japanese-tea-ceremony.jpg" alt="Japanese tea ceremony">
-                <img src="tibetan-tea-ceremony.jpg" alt="Tibetan tea ceremony">
-                <img src="russian-tea-ceremony.jpg" alt="Russian tea ceremony">
-            </div>
+        <!-- Scrolling Text Section -->
+        <div class="scrolling-text">
+            <h3>Welcome to Herbal Tea Ceremonies: Discover the beauty of tea and plant-based rituals!</h3>
         </div>
-        <button class="carousel-button" onclick="prevSlide()">❮ Prev</button>
-        <button class="carousel-button" onclick="nextSlide()">Next ❯</button>
-    </section>
 
-    <section class="creating-your-ceremony">
-        <h3>Finding Inspiration in Herbal Teas</h3>
-        <p>"Unlike traditional tea ceremonies, herbal tea ceremonies allow for creativity based on local plants and personal preferences. By choosing plants like dandelion, mint, or chamomile, you can create unique rituals with roots in your surroundings and lifestyle."</p>
-
-        <h4>Crafting a Ceremony</h4>
-        <ul>
-            <li>Purpose: Set an intention for your ceremony.</li>
-            <li>Setting: Whether indoors or outdoors, make your space beautiful and inviting.</li>
-            <li>Sequence: Begin with silence, serve tea with mindful actions, and close with gratitude.</li>
-        </ul>
-
-        <blockquote>
-            <p>"I drink the tea, the essence of the leaves becoming a part of me. This is the act of life, in one pure moment." — Thich Nhat Hanh</p>
-        </blockquote>
-    </section>
-
-    <section class="hosting-appalachian-tea">
-        <img src="appalachian-tea-ceremony.jpg" alt="Appalachian tea ceremony at Herb Mountain Farm">
-        <h3>Hosting an Appalachian Tea Ceremony</h3>
-        <p>"A few years ago, Mary Plantwalker and her friend Jessie Wilder hosted their first 'Appalachian Tea Ceremony,' honoring local plants in the Blue Ridge Mountains. This event evolved into a monthly ritual, cherished by attendees for its sense of connection to nature and simplicity."</p>
-    </section>
-
-    <section class="guide-to-hosting">
-        <h3>Guide to Hosting Your Herbal Tea Ceremony</h3>
-        <div class="tips-cards">
-            <div class="tip-card">
-                <h4>Select Your Herbs</h4>
-                <p>Choose herbs with healing or comforting properties, like nettle, lemon balm, or rose petals.</p>
+        <!-- Hero Section -->
+        <section id="hero">
+            <header>
+                <h1>Herbal Tea Ceremonies</h1>
+                <p>Discover the beauty of tea and plant-based rituals</p>
+            </header>
+            <div class="intro-box">
+                <p>Herbal Tea Ceremonies are a delightful way to find beauty in the everyday. By slowing down and connecting with plant allies, we open ourselves to heartfelt connections with ourselves and others. Creating your own herbal tea ceremony can transform any day into a meaningful experience.</p>
             </div>
-            <div class="tip-card">
-                <h4>Mindful Preparation</h4>
-                <p>Have tea prepared in advance for ease, but allow guests to witness the beauty of the plants.</p>
-            </div>
-            <div class="tip-card">
-                <h4>Offer Silence & Gratitude</h4>
-                <p>Begin and end with a moment of reflection.</p>
+        </section>
+
+        <!-- Section 1: The Essence of Tea Ceremonies -->
+        <div class="box" id="section1">
+            <h2>The Essence of Tea Ceremonies</h2>
+            <h3>True Tea</h3>
+            <p>Traditional tea ceremonies often honor the Camellia sinensis plant, known as true tea, with varieties like white, green, oolong, and black. Due to tea's widespread popularity, it has inspired herbal, or wild, tea ceremonies, creating new rituals that merge ancient traditions with modern-day lifestyles.</p>
+        </div>
+
+        <!-- Section 2: A History of Tea Culture -->
+        <div class="box" id="section2">
+            <h2>A History of Tea Culture</h2>
+            <h3>Origins & Traditions</h3>
+            <p>Originating in China and cherished for thousands of years, tea’s journey across cultures led to unique ceremonies worldwide. From Japanese Zen-inspired rituals to Tibetan butter tea, each culture imbued tea with its own rich symbolism.</p>
+            <!-- Image Carousel Placeholder -->
+            <div class="carousel">
+                <img src="chinese-tea.jpg" alt="Chinese Tea Ceremony">
+                <img src="japanese-tea.jpg" alt="Japanese Tea Ceremony">
+                <img src="tibetan-tea.jpg" alt="Tibetan Tea Ceremony">
             </div>
         </div>
 
-        <div class="image-gallery">
-            <img src="herbs.jpg" alt="Herbs for tea">
-            <img src="tea-preparation.jpg" alt="Tea preparation process">
-            <img src="ceremony-setting.jpg" alt="Serene ceremony setting">
+        <!-- Section 3: Creating Your Own Herbal Tea Ritual -->
+        <div class="box" id="section3">
+            <h2>Herbal Tea Ceremonies - Creating Your Own Ritual</h2>
+            <h3>Finding Inspiration in Herbal Teas</h3>
+            <p>Unlike traditional tea ceremonies, herbal tea ceremonies allow for creativity based on local plants and personal preferences. By choosing plants like dandelion, mint, or chamomile, you can create unique rituals with roots in your surroundings and lifestyle.</p>
+            <h3>Crafting a Ceremony</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Set an intention for your ceremony.</li>
+                <li><strong>Setting:</strong> Whether indoors or outdoors, make your space beautiful and inviting.</li>
+                <li><strong>Sequence:</strong> Begin with silence, serve tea with mindful actions, and close with gratitude.</li>
+            </ul>
+            <blockquote>
+                <p>"I drink the tea, the essence of the leaves becoming a part of me. This is the act of life, in one pure moment." — Thich Nhat Hanh</p>
+            </blockquote>
         </div>
-    </section>
 
-    <section class="final-thoughts">
-        <h3>Embrace the Ritual of Tea</h3>
-        <p>"Herbal tea ceremonies invite us into a serene space, where the simple act of drinking tea connects us with nature, tradition, and ourselves. Whether you're with friends or in solitude, let tea be a moment of mindfulness in your day."</p>
-        
-        <h4>Related Links:</h4>
-        <ul>
-            <li><a href="mary-plantwalker-books.html">Books by Mary Plantwalker</a></li>
-            <li><a href="herbal-tea-recipes.html">Herbal tea recipes and guides</a></li>
-            <li><a href="tea-culture.html">Tea culture in different countries</a></li>
-        </ul>
-        
-        <button onclick="location.href='book-ceremony.html'">Book a Ceremony at Herb Mountain Farm</button>
-    </section>
+        <!-- Section 4: Hosting an Appalachian Tea Ceremony -->
+        <div class="box" id="section4">
+            <h2>Hosting an Appalachian Tea Ceremony</h2>
+            <img src="appalachian-tea.jpg" alt="Appalachian Tea Ceremony" class="ceremony-image">
+            <p>A few years ago, Mary Plantwalker and her friend Jessie Wilder hosted their first 'Appalachian Tea Ceremony,' honoring local plants in the Blue Ridge Mountains. This event evolved into a monthly ritual, cherished by attendees for its sense of connection to nature and simplicity.</p>
+        </div>
 
-    <footer>
-        <h3>About Mary Plantwalker</h3>
-        <p>[Brief bio about Mary Plantwalker]</p>
-        <ul>
-            <li><a href="https://www.facebook.com/maryplantwalker">Facebook</a></li>
-            <li><a href="https://www.instagram.com/maryplantwalker">Instagram</a></li>
-            <li><a href="https://www.maryplantwalker.com">Website</a></li>
-        </ul>
-    </footer>
+        <!-- Section 5: Guide to Hosting Your Herbal Tea Ceremony -->
+        <div class="box" id="section5">
+            <h2>Guide to Hosting Your Herbal Tea Ceremony</h2>
+            <div class="tips">
+                <div class="card">
+                    <h3>Select Your Herbs</h3>
+                    <p>Choose herbs with healing or comforting properties, like nettle, lemon balm, or rose petals.</p>
+                </div>
+                <div class="card">
+                    <h3>Mindful Preparation</h3>
+                    <p>Have tea prepared in advance for ease, but allow guests to witness the beauty of the plants.</p>
+                </div>
+                <div class="card">
+                    <h3>Offer Silence & Gratitude</h3>
+                    <p>Begin and end with a moment of reflection.</p>
+                </div>
+            </div>
+            <!-- Image Gallery Placeholder -->
+            <div class="gallery">
+                <img src="herbs.jpg" alt="Herbs">
+                <img src="preparation.jpg" alt="Preparation">
+                <img src="ceremony.jpg" alt="Tea Ceremony">
+            </div>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- Section 6: Final Thoughts & Resources -->
+        <div class="box" id="section6">
+            <h2>Final Thoughts & Resources</h2>
+            <h3>Embrace the Ritual of Tea</h3>
+            <p>Herbal tea ceremonies invite us into a serene space, where the simple act of drinking tea connects us with nature, tradition, and ourselves. Whether you're with friends or in solitude, let tea be a moment of mindfulness in your day.</p>
+        </div>
+
+    </div>
 </body>
 </html>
