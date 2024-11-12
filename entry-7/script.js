@@ -4,12 +4,12 @@ const totalSlides = slides.length;
 
 function showSlide(index) {
     const carouselContainer = document.querySelector('.carousel-container');
-    const offset = -index * 100; // Move to the left based on the current slide index
+    const offset = -index * 100; 
     carouselContainer.style.transform = `translateX(${offset}%)`;
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides; // Move to the next slide
+    currentSlide = (currentSlide + 1) % totalSlides; 
     showSlide(currentSlide);
 }
 
@@ -20,8 +20,8 @@ function prevSlide() {
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-        x.className += " responsive"; // Add responsive class
+        x.className += " responsive"; 
     } else {
-        x.className = "topnav"; // Remove responsive class
+        x.className = "topnav"; 
     }
 }
