@@ -16,7 +16,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #a2b9a5; /* Match header background color */
+    background-color: #a2b9a5;
     color: #ffffff;
     position: sticky;
     border-radius: 10px;
@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif; /* Updated to a modern font */
     font-size: 2.5em;
     margin: 0;
 }
@@ -35,14 +35,15 @@ header h1 {
     overflow: hidden;
     position: relative;
     margin: 20px 0;
-    background-color: #ffffff; /* White background for clarity */
+    background-color: #ffffff;
     padding: 10px;
-    border: 1px solid #80deea; /* Light cyan border for a refreshing look */
+    border: 1px solid #80deea;
 }
 
 .scrolling-text h3 {
+    font-family: 'Poppins', sans-serif; /* Updated to match the modern look */
     font-size: 2.5em;
-    color: #ff4081; /* Sparkling pink for a bubbly pop */
+    color: #ff4081;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -60,12 +61,12 @@ header h1 {
 
 /* Top Navigation Bar */
 .topnav {
-    background-color: #ff80ab; /* Sparkling pink for a fun vibe */
+    background-color: #ff80ab;
     overflow: hidden;
     position: fixed;
-    width: calc(100% - 250px); /* Adjust width to occupy the remaining space */
+    width: calc(100% - 250px);
     top: 0;
-    left: 250px; /* Start after the sidenav ends */
+    left: 250px;
     z-index: 100;
 }
 
@@ -79,7 +80,7 @@ header h1 {
 }
 
 .topnav a:hover {
-    background-color: #ffe082; /* Soft yellow to contrast with pink */
+    background-color: #ffe082;
     color: #333;
 }
 
@@ -88,7 +89,7 @@ header h1 {
 }
 
 .topnav a.active {
-    background-color: #ff4081; /* Sparkling pink for active link */
+    background-color: #ff4081;
     color: white;
 }
 
@@ -99,7 +100,7 @@ header h1 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffffff; /* White background for a clean look */
+    background-color: #ffffff;
     padding-top: 60px;
     z-index: 101;
     transition: all 0.3s ease;
@@ -109,44 +110,47 @@ header h1 {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #ff80ab; /* Sparkling pink for links */
+    color: #ff80ab;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #00bcd4; /* Aqua blue hover effect */
-    background-color: #ffe082; /* Soft yellow */
+    color: #00bcd4;
+    background-color: #ffe082;
 }
 
 .sidenav a.active {
-    background-color: #ff4081; /* Active link with vibrant color */
+    background-color: #ff4081;
     color: white;
 }
 
 /* Content Wrapper */
 .content-wrapper {
-    margin-left: 250px;
+    margin-left: 400px; /* Increase margin-left to push content further right */
     padding: 20px;
-    background-color: #ffffff; /* White background for content */
+    background-color: #ffffff;
     color: #333;
     max-width: 800px;
 }
 
+
 /* Section Box Styling */
 .box {
-    background-color: #fafafa; /* Light grey box for sections */
+    background-color: #fafafa;
     margin: 20px 0;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 250px; /* Fixed height for the text box */
-    overflow-y: auto; /* Scrollable content if it exceeds the height */
+    height: 250px;
+    overflow-y: auto;
+    margin-left: 40px; /* Increased to push boxes further right */
 }
 
 .box h2, .box h3 {
-    color: #ff4081; /* Sparkling pink for section headings */
+    font-family: 'Poppins', sans-serif; /* Modern and unique title font */
+    color: #ff4081;
 }
 
 .box p {
@@ -184,17 +188,19 @@ header h1 {
 
 /* Tips and Cards */
 .tips .card {
-    background-color: #ffecb3; /* Light yellow for a fun, refreshing look */
+    background-color: #ffecb3;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
     text-align: center;
+    margin-left: 40px; /* Increased to shift tips/cards further right */
 }
 
 .tips .card h3 {
-    color: #ff4081; /* Sparkling pink */
+    font-family: 'Poppins', sans-serif;
+    color: #ff4081;
 }
 
 .tips .card p {
@@ -203,7 +209,7 @@ header h1 {
 
 /* Footer styling */
 footer {
-    background-color: #a2b9a5; /* Match footer background color */
+    background-color: #a2b9a5;
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -227,10 +233,10 @@ footer .bottom-left {
 
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;} /* Hide links on small screens */
+    .topnav a:not(:first-child) {display: none;} 
     .topnav a.icon {
         float: right;
-        display: block; /* Show the hamburger menu icon */
+        display: block;
     }
 
     .topnav.responsive {position: relative;}
@@ -242,6 +248,14 @@ footer .bottom-left {
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left; /* Align text left */
+        text-align: left;
     }
 }
+
+body {
+    background: url('sparkles.jpeg') center/cover no-repeat;
+    padding: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
