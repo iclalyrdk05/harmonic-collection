@@ -253,15 +253,29 @@ footer .bottom-left {
 }
 
 body {
-    background: url('images/lemon\ sparkling.jpeg') center/cover no-repeat;
+    position: relative;
     padding: 40px;
     color: #ffffff;
     text-align: center;
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/lemon sparkling.jpeg') center/cover no-repeat;
+    opacity: 0.8; /* Set the opacity of the background image */
+    z-index: -1; /* Position it behind the body content */
+}
+
+
 header {
     background: url('images/sparkles.jpeg') center/cover no-repeat;
     padding: 40px;
+    opacity: 0.5;
     color: #ffffff;
     text-align: center;
 }
