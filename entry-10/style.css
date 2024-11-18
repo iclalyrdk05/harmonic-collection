@@ -106,11 +106,6 @@ header h1 {
     font-size: 25px;
     color: #6d4c41;
     display: block; 
-    
-    header {
-        background: url('images/sparkles.jpeg') center/cover no-repeat;
-        padding: 40px;
-        opacity: 0.5;
-        color: #ffffff;
-        text-align: center;
-    }
+}
+
+   
