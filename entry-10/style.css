@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif; 
+    background-color: #f4e1c1;
+    color: #3e2723; /* Dark brown for text */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #6d4c41; /* Warm coffee brown */
+    color: #ffffff;
+    position: sticky;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.scrolling-text {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #d7ccc8; /* Light brown border */
+}
+
+.scrolling-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #6d4c41;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: scrolling 15s linear infinite;
+}
+
+@keyframes scrolling {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.topnav {
+    background-color: #3e2723; /* Dark brown */
+    overflow: hidden;
+    position: fixed;
+    width: calc(100% - 250px);
+    top: 0;
+    left: 250px;
+    z-index: 100;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #d7ccc8; /* Light brown */
+    color: #3e2723;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav a.active {
+    background-color: #6d4c41;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff7e3; /* Light beige */
+    padding-top: 60px;
+    z-index: 101;
+    transition: all 0.3s ease;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #6d4c41;
+    display: block; 
+    
+    header {
+        background: url('images/sparkles.jpeg') center/cover no-repeat;
+        padding: 40px;
+        opacity: 0.5;
+        color: #ffffff;
+        text-align: center;
+    }
