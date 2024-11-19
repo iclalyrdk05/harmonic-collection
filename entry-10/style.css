@@ -5,25 +5,41 @@
 }
 
 body {
-    font-family: 'Quicksand', sans-serif; 
-    background-color: #f4e1c1;
-    color: #3e2723; /* Dark brown for text */
+    font-family: 'Scheherazade', serif;
+    background-color: #fef7ec; /* Light beige resembling coffee foam */
+    color: #3e2a1f; /* Rich brown */
+    position: relative;
+    padding: 40px;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/turkish-coffee-bg.jpeg') center/cover no-repeat;
+    opacity: 0.7; /* Softer opacity for elegance */
+    z-index: -1; /* Position it behind the body content */
 }
 
 header {
+    background: url('images/pattern-gold-blue.jpeg') center/cover no-repeat;
+    padding: 40px;
+    opacity: 0.85;
+    color: #fef7ec; /* Light beige text */
     text-align: center;
-    padding: 20px;
-    background-color: #6d4c41; /* Warm coffee brown */
-    color: #ffffff;
-    position: sticky;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 header h1 {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Amiri', serif;
     font-size: 2.5em;
     margin: 0;
+    color: #4c3b28; /* Deep coffee brown */
 }
 
 .scrolling-text {
@@ -31,15 +47,15 @@ header h1 {
     overflow: hidden;
     position: relative;
     margin: 20px 0;
-    background-color: #ffffff;
+    background-color: #fef7ec;
     padding: 10px;
-    border: 1px solid #d7ccc8; /* Light brown border */
+    border: 1px solid #d3a86c; /* Gold accent */
 }
 
 .scrolling-text h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Amiri', serif;
     font-size: 2.5em;
-    color: #6d4c41;
+    color: #af4d4d; /* Red accent from Turkish carpets */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -51,12 +67,12 @@ header h1 {
 }
 
 @keyframes scrolling {
-    0%   { transform: translateX(100%); }
+    0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
 
 .topnav {
-    background-color: #3e2723; /* Dark brown */
+    background-color: #784734; /* Deep brown */
     overflow: hidden;
     position: fixed;
     width: calc(100% - 250px);
@@ -68,24 +84,21 @@ header h1 {
 .topnav a {
     float: left;
     display: block;
-    color: white;
+    color: #fef7ec;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
 .topnav a:hover {
-    background-color: #d7ccc8; /* Light brown */
-    color: #3e2723;
-}
-
-.topnav .icon {
-    display: none;
+    background-color: #d3a86c; /* Gold hover effect */
+    color: #3e2a1f; /* Deep brown text */
 }
 
 .topnav a.active {
-    background-color: #6d4c41;
-    color: white;
+    background-color: #af4d4d; /* Red accent */
+    color: #fef7ec;
 }
 
 .sidenav {
@@ -94,18 +107,165 @@ header h1 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff7e3; /* Light beige */
+    background-color: #fef7ec;
     padding-top: 60px;
     z-index: 101;
     transition: all 0.3s ease;
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 14px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #6d4c41;
-    display: block; 
+    font-size: 22px;
+    color: #784734; /* Rich brown */
+    display: block;
+    transition: 0.3s;
 }
 
-   
+.sidenav a:hover {
+    color: #006a8e; /* Turkish blue accent */
+    background-color: #d3a86c;
+}
+
+.sidenav a.active {
+    background-color: #af4d4d;
+    color: #fef7ec;
+}
+
+.content-wrapper {
+    margin-left: 270px; /* Adjusted for side nav width */
+    padding: 20px;
+    background-color: #ffffff;
+    color: #3e2a1f;
+    max-width: 800px;
+    margin-top: 80px; /* To avoid overlap with fixed top nav */
+}
+
+.box {
+    background-color: #fff8f0; /* Very light beige */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 300px; /* Fixed height for the box */
+    overflow-y: auto;
+}
+
+.box h2, .box h3 {
+    font-family: 'Amiri', serif;
+    color: #4c3b28; /* Coffee brown */
+}
+
+.box p {
+    font-size: 1.1em;
+    color: #3e2a1f;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tips .card {
+    background-color: #e6ccb2; /* Light beige with warmth */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.tips .card h3 {
+    font-family: 'Amiri', serif;
+    color: #af4d4d;
+}
+
+.tips .card p {
+    color: #555;
+}
+
+footer {
+    background-color: #4c3b28;
+    color: #fef7ec;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer .bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .content-wrapper {
+        margin-left: 0; /* Full-width on mobile */
+        padding: 20px;
+    }
+
+    .sidenav {
+        width: 100%; /* Full-width on mobile */
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}

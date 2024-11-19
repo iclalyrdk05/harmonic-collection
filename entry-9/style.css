@@ -5,30 +5,30 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f7f4; /* Light cream background */
-    color: #333;
+    font-family: 'Poppins', sans-serif; /* Bold and fun font */
+    background-color: #ffffff; /* White background */
+    color: #b22222; /* Crimson red for text */
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #85a0a2; /* Muted teal */
-    color: #ffffff;
+    background-color: #b22222; /* Crimson red */
+    color: #ffffff; /* White text */
     position: sticky;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Pacifico', cursive; /* Fun header font */
     font-size: 2.5em;
     margin: 0;
-    color: #f0f7f4;
+    color: #ffffff; /* White text */
 }
 
 .topnav {
-    background-color: #d4e9e2; /* Soft blue-green */
+    background-color: #ffcccc; /* Light red */
     overflow: hidden;
     position: fixed;
     width: calc(100% - 250px);
@@ -40,18 +40,19 @@ header h1 {
 .topnav a {
     float: left;
     display: block;
-    color: #333;
+    color: #b22222; /* Crimson red */
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .topnav a:hover {
-    background-color: #c0e0d9;
+    background-color: #ff9999; /* Softer red for hover effect */
 }
 
 .topnav a.active {
-    background-color: #85a0a2;
+    background-color: #b22222; /* Crimson red */
     color: white;
 }
 
@@ -61,7 +62,7 @@ header h1 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background */
     padding-top: 60px;
     z-index: 101;
     transition: all 0.3s ease;
@@ -71,31 +72,32 @@ header h1 {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #85a0a2;
+    color: #b22222; /* Crimson red */
     display: block;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 .sidenav a:hover {
-    color: #333;
-    background-color: #c0e0d9;
+    color: white;
+    background-color: #ff9999; /* Softer red */
 }
 
 .sidenav a.active {
-    background-color: #85a0a2;
+    background-color: #b22222; /* Crimson red */
     color: white;
 }
 
 .content-wrapper {
     margin-left: 300px; 
     padding: 20px;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #ffffff; /* White background */
+    color: #b22222; /* Crimson red text */
     max-width: 800px;
 }
 
 .box {
-    background-color: #fafafa;
+    background-color: #ffe6e6; /* Very light red */
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
@@ -105,18 +107,18 @@ header h1 {
 }
 
 .box h2 {
-    font-family: 'Playfair Display', serif;
-    color: #85a0a2;
+    font-family: 'Pacifico', cursive; /* Fun header font */
+    color: #b22222; /* Crimson red */
 }
 
 .box p {
     font-size: 1.1em;
-    color: #333;
+    color: #b22222; /* Crimson red */
 }
 
 footer {
-    background-color: #85a0a2;
-    color: #ffffff;
+    background-color: #b22222; /* Crimson red */
+    color: #ffffff; /* White text */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -126,6 +128,7 @@ footer {
 
 footer p {
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* Media Queries for Responsiveness */
