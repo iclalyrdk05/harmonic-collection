@@ -99,6 +99,12 @@ header h1 {
   color: white;
 }
 
+
+.sidenav a:first-child {
+  font-weight: bolder;
+}
+
+
 .sidenav {
   height: 100%;
   width: 250px;
@@ -106,26 +112,31 @@ header h1 {
   top: 0;
   left: 0;
   background-color: #0e3080;
-  padding-top: 20px;
+  padding-top: 60px;
+  z-index: 101;
+  transition: all 0.3s ease;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sidenav a {
   padding: 14px 32px;
   text-decoration: none;
-  font-size: 18px;
-  color: #b1624a;
-  font-weight: bold;
+  font-size: 22px;
+  color: #b1624a; /* Rich brown */
   display: block;
-  margin: 10px 0;
-  text-align: center;
+  transition: 0.3s;
 }
 
 .sidenav a:hover {
   background-color: #ffd966;
   color: white;
-  border-radius: 4px;
 }
+
+.sidenav a.active {
+  background-color: #af4d4d;
+  color: #fef7ec;
+}
+
 
 .content-wrapper {
   margin-left: 400px;

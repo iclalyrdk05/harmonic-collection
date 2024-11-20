@@ -56,31 +56,37 @@ header h1 {
     color: white;
 }
 
+
+.sidenav a:first-child {
+    font-weight: bolder;
+}
+
+
 .sidenav {
     height: 100%;
     width: 250px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;;
     padding-top: 60px;
     z-index: 101;
     transition: all 0.3s ease;
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sidenav a {
     padding: 14px 32px;
     text-decoration: none;
-    font-size: 20px;
-    color: #b22222; /* Crimson red */
+    font-size: 22px;
+    color:  #b22222; /* Rich brown */
     display: block;
     transition: 0.3s;
-    font-weight: bold;
 }
 
 .sidenav a:hover {
     color: white;
-    background-color: #ff9999; /* Softer red */
+    background-color: #ff9999;
 }
 
 .sidenav a.active {

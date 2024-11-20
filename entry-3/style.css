@@ -1,38 +1,40 @@
+.sidenav a:first-child {
+  font-weight: bolder;
+}
+
 .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: #E1E48E; 
-    padding-top: 20px;
-  }
-  
-  .sidenav a {
-    padding: 14px 32px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #b1624a; 
-    font-weight: bold; 
-    display: block;
-    margin: 10px 0;
-    text-align: center;
-  }
-  
-  .sidenav a:hover {
-    background-color: #ffd966;
-    color: white;
-    border-radius: 4px;
-  }
-  
-  .content {
-    margin-left: 450px; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
-    margin-top: 50px;
-    width: 80%;
-  }
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #E1E48E;
+  padding-top: 60px;
+  z-index: 101;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a {
+  padding: 14px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #b1624a; /* Rich brown */
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #ffd966;
+  color: white;
+}
+
+.sidenav a.active {
+  background-color: #af4d4d;
+  color: #fef7ec;
+}
+
+
   
 body {
     font-family: 'Lora', serif;
