@@ -8,30 +8,44 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 250px;
     position: fixed;
-    left: 0;
     top: 0;
-    background-color: #E1E48E; 
-    padding-top: 20px;
-}
-
-.sidenav a {
+    left: 0;
+    background-color: #E1E48E;
+    padding-top: 60px;
+    z-index: 101;
+    transition: all 0.3s ease;
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enable flex layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .sidenav a {
     padding: 14px 32px;
     text-decoration: none;
-    font-size: 18px;
-    color: #b1624a;
-    font-weight: bold; 
+    font-size: 22px;
+    color: #b1624a; /* Rich brown */
     display: block;
-    margin: 10px 0;
-    text-align: center;
-}
-
-.sidenav a:hover {
+    transition: 0.3s;
+    text-align: center; /* Center text within links */
+  }
+  
+  .sidenav a:hover {
     background-color: #ffd966;
     color: white;
-    border-radius: 4px;
-}
+  }
+  
+  .sidenav a.active {
+    background-color: #af4d4d;
+    color: #fef7ec;
+  }
+  
+  .sidenav a:first-child {
+    font-weight: bolder;
+  }
+  
 
 header {
     text-align: center;

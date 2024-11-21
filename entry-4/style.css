@@ -1,7 +1,3 @@
-.sidenav a:first-child {
-  font-weight: bolder;
-}
-
 .sidenav {
   height: 100%;
   width: 250px;
@@ -13,6 +9,9 @@
   z-index: 101;
   transition: all 0.3s ease;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+  display: flex; /* Enable flex layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
 .sidenav a {
@@ -22,6 +21,7 @@
   color: #b1624a; /* Rich brown */
   display: block;
   transition: 0.3s;
+  text-align: center; /* Center text within links */
 }
 
 .sidenav a:hover {
@@ -32,6 +32,10 @@
 .sidenav a.active {
   background-color: #af4d4d;
   color: #fef7ec;
+}
+
+.sidenav a:first-child {
+  font-weight: bolder;
 }
 
 
