@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif; /* Bold and fun font */
+    font-family: 'Quicksand', sans-serif; 
     background-color: #ffffff; /* White background */
     color: #b22222; /* Crimson red for text */
 }
@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Pacifico', cursive; /* Fun header font */
+    font-family: 'Quicksand', sans-serif; 
     font-size: 2.5em;
     margin: 0;
     color: #ffffff; /* White text */
@@ -68,9 +68,6 @@ header h1 {
     z-index: 101;
     transition: all 0.3s ease;
     box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
-    display: flex; /* Enable flex layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
   }
   
   .sidenav a {
@@ -117,7 +114,7 @@ header h1 {
 }
 
 .box h2 {
-    font-family: 'Pacifico', cursive; /* Fun header font */
+    font-family: 'Quicksand', sans-serif; 
     color: #b22222; /* Crimson red */
 }
 

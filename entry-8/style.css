@@ -110,7 +110,7 @@ header h1 {
 .sidenav a {
     padding: 14px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     color: #ff80ab;
     display: block;
     transition: 0.3s;
@@ -267,7 +267,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('images/lemon sparkling.jpeg') center/cover no-repeat;
+    background-color: #ff80ab;
     opacity: 0.8; /* Set the opacity of the background image */
     z-index: -1; /* Position it behind the body content */
 }

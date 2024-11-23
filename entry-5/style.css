@@ -1,88 +1,123 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #F4F8F3; /* Light matcha green background */
+  color: #333;
+  text-align: center;
+}
+
+/* Sidebar */
 .sidenav {
   height: 100%;
   width: 250px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #E1E48E;
+  background-color: #A8C085; /* Light matcha green */
   padding-top: 60px;
   font-family: 'Quicksand', sans-serif;
   z-index: 101;
   transition: all 0.3s ease;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
-  display: flex; /* Enable flex layout */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
 }
 
 .sidenav a {
   padding: 14px 32px;
   text-decoration: none;
   font-size: 22px;
-  color: #b1624a; /* Rich brown */
+  color: #3D5A45; /* Dark matcha green */
   display: block;
   transition: 0.3s;
-  text-align: center; /* Center text within links */
+  text-align: center;
 }
 
 .sidenav a:hover {
-  background-color: #ffd966;
+  background-color: #B8D899; /* Lighter green on hover */
   color: white;
 }
 
 .sidenav a.active {
-  background-color: #af4d4d;
-  color: #fef7ec;
+  background-color: #7C9A6A; /* Muted matcha green */
+  color: #F2F2F2; /* Off-white text */
 }
 
 .sidenav a:first-child {
   font-weight: bolder;
 }
 
-
-.content {
-  background-image: url('images/matchabackground.jpg'); 
-  background-size: cover;
-  background-position: center;
-  height: 150vh;
-  width: 200vh;
-  margin-left: 200px; 
-  position: static;
+/* Top Navigation */
+.topnav {
+  background-color: #A8C085; /* Matcha green */
+  overflow: hidden;
+  position: fixed;
+  width: calc(100% - 250px);
+  top: 0;
+  left: 250px;
+  z-index: 100;
 }
 
-.textbox {
-  width: 300px;
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.8); 
-  color: #333;
+.topnav a {
+  float: left;
+  color: #3D5A45; /* Dark matcha green */
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #B8D899;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #7C9A6A;
+  color: white;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  margin-left: 250px;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+/* Content Sections */
+.box {
+  background-color: #D5E1B7; /* Soft matcha color for the box background */
+  color: #3D5A45; /* Dark matcha green */
+  margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
-  position: absolute;
-}
-
-.left-box {
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-}
-
-.right-box {
-  top: 110%;
-  right: -20%;
-  transform: translateY(-50%);
-}
-
-h1 {
-  font-family: 'Notable', sans-serif;
-  color: #d6a393;
-  font-size: 48px;
+  width: 70%;
   text-align: center;
-  position: absolute;
-  top: 5%;
-  left: 83%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
 }
+
+.box img {
+  width: 200px;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Scrollable text box */
+.text-box {
+  overflow-y: scroll;
+  height: 180px; /* Fixed height for scrollable area */
+  padding-right: 10px;
+  font-size: 1.1rem; /* Increase text size */
+  line-height: 1.6; /* Improve line spacing */
+}
+
+/* Title */
+h1 {
+  font-size: 4rem;
+  color: #3D5A45; /* Dark matcha green */
+  font-family: 'Playfair Display', serif;

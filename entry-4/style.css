@@ -1,3 +1,40 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #FFEFDB;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem; /* Make title much larger */
+  color: #8aa51d; /* New color for the title */
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px; /* Increase space below the title */
+}
+
+/* Subtitle Styling (h2) */
+h2 {
+  font-size: 2.5rem; /* Increase subtitle size */
+  color: #6b8116; /* Subtitle color */
+  margin-bottom: 25px; /* Add space between subtitle and text box */
+}
+
+/* Paragraph styling inside .text-box */
+.text-box p {
+  font-size: 1.1rem; /* Slightly larger font */
+  line-height: 1.6; /* More readable line height */
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+  color: #151a02;
+}
+
+/* Sidebar */
 .sidenav {
   height: 100%;
   width: 250px;
@@ -6,22 +43,17 @@
   left: 0;
   background-color: #E1E48E;
   padding-top: 60px;
-  z-index: 101;
-  transition: all 0.3s ease;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
-  display: flex; /* Enable flex layout */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
 }
 
 .sidenav a {
   padding: 14px 32px;
-  text-decoration: none;
   font-size: 22px;
-  color: #b1624a; /* Rich brown */
+  color: #b1624a;
   display: block;
+  text-align: center;
+  text-decoration: none;
   transition: 0.3s;
-  text-align: center; /* Center text within links */
 }
 
 .sidenav a:hover {
@@ -34,87 +66,63 @@
   color: #fef7ec;
 }
 
-.sidenav a:first-child {
-  font-weight: bolder;
+/* Top Navigation */
+.topnav {
+  background-color: #E1E48E;
+  overflow: hidden;
+  position: fixed;
+  width: calc(100% - 250px);
+  top: 0;
+  left: 250px;
+  z-index: 100;
 }
 
-
-
-.content {
-  margin-left: 450px; 
-  flex-direction: column;
-  align-items: flex-end; 
-  margin-top: 50px;
-  width: 80%;
+.topnav a {
+  float: left;
+  color: #b1624a;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
-body {
-  font-family: 'Quicksand', sans-serif;
-  background-color: #FFEFDB; 
-  margin: 0;
+.topnav a:hover {
+  background-color: #ffd966;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #af4d4d;
+  color: white;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  margin-left: 250px;
+  margin-top: 60px;
   padding: 20px;
 }
 
-h1 {
-  font-family: 'Quicksand', sans-serif;
-  color: #b1624a; 
+/* Content Sections */
+.box {
+  background-color: #f0f7b2;
+  color: rgb(8, 0, 0);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%;
   text-align: center;
-  margin-right: 20px; 
-  margin-bottom: 30px;
-  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for content */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .text-box {
-  background-color: #ffd966; 
-  color: #5f3528;
-  padding: 20px;
-  border-radius: 8px;
-  width: 80%; 
-  margin-bottom: 20px;
-  text-align: center;
-  position: relative;
-  right: -250px; 
-}
+  width: 60%; /* Narrow the text box */
 
-
-h2 {
-  font-family: 'Quicksand', sans-serif;
-  color: #b1624a; 
-
-nav a {
-  color: #FF8C69; 
-  margin-right: 10px;
-  text-align: center;
-}
-
-img {
-  border-radius: 8px;
-  position: relative;
-}
-
-.image-right {
-  margin-left: 20px;
-  position: absolute;
-  right: 250px; 
-}
-
-.image-left {
-  margin-left: 20px;
-  position: absolute;
-  right: 250px; 
-}
-
-
-@keyframes example {
-  from { background-color: #ffd966; }
-  to { background-color: #E1E48E; }
-}
-
-.animated-title {
-  animation-name: example;
-  animation-duration: 10s;
-  animation-iteration-count: infinite; 
-  padding: 20px;
-  color: #FF8C69;
-  text-align: center;
-}
+  

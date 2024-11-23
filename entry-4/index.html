@@ -3,47 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lemonade Theme</title>
+  <title>Lemonade Culture</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 class="animated-title">Lemonade Culture</h1>
-    
 
+  <!-- Sidebar -->
   <div id="mySidenav" class="sidenav">
-    <a href="../homepage/" id="about">Home</a>
-    <a href="../entry-1/" id="about">Turkish tea</a>
-    <a href="../entry-2/" id="blog">Espresso</a>
-    <a href="../entry-3/" id="projects">Cocktails</a>
-    <a href="../entry-4/" id="contact">Lemonade</a>
-    <a href="../entry-5/" id="contact">Matcha</a>
-    <a href="../entry-6/" id="contact">Salgam</a>
-    <a href="../entry-7/" id="contact">Herbal Tea</a>
-    <a href="../entry-8/" id="contact">Sparkling Drinks</a>
-    <a href="../entry-9/"  id="contact">Ayran</a>
-    <a href="../entry-10/" id="contact">Turkish Coffee</a>
+    <a href="../homepage/" id="home">Home</a>
+    <a href="../entry-1/" id="turkish-tea">Turkish Tea</a>
+    <a href="../entry-2/" id="espresso">Espresso</a>
+    <a href="../entry-3/" id="cocktails">Cocktails</a>
+    <a href="../entry-4/" id="lemonade" class="active">Lemonade</a>
+    <a href="../entry-5/" id="matcha">Matcha</a>
+    <a href="../entry-6/" id="salgam">Salgam</a>
+    <a href="../entry-7/" id="herbal-tea">Herbal Tea</a>
+    <a href="../entry-8/" id="sparkling-drinks">Sparkling Drinks</a>
+    <a href="../entry-9/" id="ayran">Ayran</a>
+    <a href="../entry-10/" id="turkish-coffee">Turkish Coffee</a>
   </div>
 
-  <section class="text-box">
-    <h2>The Refreshing Journey of Lemonade</h2>
-    <p>Lemonade has ancient origins, with the Egyptians among the first to mix lemon juice and sugar as a refreshing and medicinal drink. The beverage spread across the Mediterranean, where cultures like the Persians and Levantines added honey and mint to enhance its flavor.
+  <!-- Top Navigation -->
+  <div class="topnav" id="myTopnav">
+    <a href="#hero" class="active">Home</a>
+    <a href="#origins">Origins</a>
+    <a href="#modern-trends">Modern Trends</a>
+    <a href="#global-influence">Global Influence</a>
+    <a href="#recipe">Lemonade Recipe</a>
+    <a href="#social-hub">Social Hub</a>
+  </div>
 
-      <p>
-    <br>
-    <img src="https://i.pinimg.com/736x/54/d0/dd/54d0dd00f186fbabc197ca064593317a.jpg" alt="Cocktail Image" width="200" height="250" />
+  <!-- Content Wrapper -->
+  <div class="content-wrapper">
+    <section id="hero">
+      <header>
+        <h1>Lemonade Culture</h1>
+      </header>
+    </section>
 
-    <h2>Lemonade's Rise in Europe and Beyond</h2>
-    <p>By the 17th century, lemonade reached Europe, becoming popular in France. "Limonade" was sold by street vendors and soon spread across the continent, with the British adding gin. In America, lemonade stands became a symbol of summer and childhood.
+    <!-- Origins Section -->
+    <div class="box" id="origins">
+      <h2>The Refreshing Journey of Lemonade</h2>
+      <div class="content">
+        <div class="text-box">
+          <p>Lemonade has ancient origins, with the Egyptians among the first to mix lemon juice and sugar as a refreshing and medicinal drink. The beverage spread across the Mediterranean, where cultures like the Persians and Levantines added honey and mint to enhance its flavor.</p>
+        </div>
+        <img src="https://i.pinimg.com/736x/54/d0/dd/54d0dd00f186fbabc197ca064593317a.jpg" alt="Lemonade Image" width="200" height="250" />
+      </div>
+    </div>
 
-    </p>
-    <br>
-    <img src="https://i.pinimg.com/736x/5a/2f/66/5a2f66b155a348bebcb6de6138759e67.jpg" alt="Cocktail Image" width="200" height="250" />
-    <h2>Modern Innovations in Lemonade</h2>
-    <p>Today, lemonade continues to evolve, from classic recipes to craft versions infused with herbs and botanicals. Each glass carries centuries of cultural history, showing how simple ingredients can create timeless delights.    </p>
-  </section>
+    <!-- Modern Trends Section -->
+    <div class="box" id="modern-trends">
+      <h2>Lemonade's Rise in Europe and Beyond</h2>
+      <div class="content">
+        <div class="text-box">
+          <p>By the 17th century, lemonade reached Europe, becoming popular in France. "Limonade" was sold by street vendors and soon spread across the continent, with the British adding gin. In America, lemonade stands became a symbol of summer and childhood.</p>
+        </div>
+        <img src="https://i.pinimg.com/736x/5a/2f/66/5a2f66b155a348bebcb6de6138759e67.jpg" alt="European Lemonade" width="200" height="250" />
+      </div>
+    </div>
+
+    <!-- Global Influence Section -->
+    <div class="box" id="global-influence">
+      <h2>Modern Innovations in Lemonade</h2>
+      <div class="content">
+        <div class="text-box">
+          <p>Today, lemonade continues to evolve, from classic recipes to craft versions infused with herbs and botanicals. Each glass carries centuries of cultural history, showing how simple ingredients can create timeless delights.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lemonade Recipe Section -->
+    <div class="box" id="recipe">
+      <h2>Signature Lemonade Recipe</h2>
+      <div class="content">
+        <div class="text-box">
+          <p>Bring a refreshing twist to your gatherings with a Classic Lemonade! Here's how:</p>
+          <ul>
+            <li><strong>Ingredients:</strong></li>
+            <li>4 large lemons</li>
+            <li>1 cup white sugar</li>
+            <li>5 cups water</li>
+            <li>Ice cubes</li>
+            <li>Mint leaves (optional)</li>
+          </ul>
+          <p><strong>Instructions:</strong></p>
+          <ol>
+            <li>Squeeze the juice of the lemons into a pitcher.</li>
+            <li>Add sugar and stir until it dissolves completely.</li>
+            <li>Fill the pitcher with water, and stir again to combine.</li>
+            <li>Serve over ice and garnish with mint leaves if desired.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Hub Section -->
+    <div class="box" id="social-hub">
+      <h2>Lemonade as a Social Experience</h2>
+      <div class="content">
+        <div class="text-box">
+          <p>Lemonade, much like other refreshing beverages, has long been associated with gatherings and socializing. Whether at summer picnics or as part of a family tradition, lemonade brings people together to enjoy a moment of refreshment and connection.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
-

@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: 'Noto Serif Ottoman Siyaq', 'Ephesis', serif;
+    font-family: 'Quicksand', sans-serif; 
     background-color: #fef7ec;
     color: #3e2a1f;
     position: relative;
@@ -37,7 +37,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Amiri', serif;
+    font-family: 'Quicksand', sans-serif; 
     font-size: 2.5em;
     margin: 0;
     color: #4c3b28; /* Deep coffee brown */
@@ -54,7 +54,7 @@ header h1 {
 }
 
 .scrolling-text h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Quicksand', sans-serif; 
     font-size: 2.5em;
     color: #af4d4d; /* Red accent from Turkish carpets */
     position: absolute;
@@ -139,6 +139,8 @@ header h1 {
     color: #fef7ec;
 }
 
+
+
 .content-wrapper {
     margin-left: 270px; /* Adjusted for side nav width */
     padding: 20px;
@@ -160,7 +162,7 @@ header h1 {
 }
 
 .box h2, .box h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Quicksand', sans-serif; 
     color: #4c3b28; /* Coffee brown */
 }
 
@@ -207,7 +209,7 @@ header h1 {
 }
 
 .tips .card h3 {
-    font-family: 'Amiri', serif;
+    font-family: 'Quicksand', sans-serif; 
     color: #af4d4d;
 }
 
