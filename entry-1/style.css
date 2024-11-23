@@ -36,7 +36,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2.5em;
   margin: 0;
 }
@@ -141,7 +141,7 @@ header h1 {
 .content-wrapper {
   margin-left: 400px;
   padding: 20px;
-  background-color: #0e3080;
+  background-color: #97a8d1;
   max-width: 800px;
 }
 

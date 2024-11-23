@@ -49,14 +49,14 @@
 }
 
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Quicksand', sans-serif;
   background-color: #FFEFDB; 
   margin: 0;
   padding: 20px;
 }
 
 h1 {
-  font-family: 'Notable', serif;
+  font-family: 'Quicksand', sans-serif;
   color: #b1624a; 
   text-align: center;
   margin-right: 20px; 
@@ -78,7 +78,7 @@ h1 {
 
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Quicksand', sans-serif;
   color: #b1624a; 
 
 nav a {

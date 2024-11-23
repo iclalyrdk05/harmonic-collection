@@ -41,7 +41,7 @@
 
   
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: #FFEFDB; 
     margin: 0;
     padding: 20px;
@@ -61,7 +61,7 @@ body {
 
 
 h1, h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Quicksand', sans-serif;
     color: #FF8C69; 
     text-align: center;
 }
