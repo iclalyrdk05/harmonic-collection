@@ -50,18 +50,16 @@ header h1 {
     margin: 20px 0;
     background-color: #fef7ec;
     padding: 10px;
-    border: 1px solid #d3a86c; /* Gold accent */
 }
 
 .scrolling-text h3 {
-    font-family: 'Quicksand', sans-serif; 
-    font-size: 2.5em;
+    font-family: 'Playfair Display', serif; /* Cursive-like font */
+    font-size: 1.5em;
     color: #af4d4d; /* Red accent from Turkish carpets */
     position: absolute;
-    width: 100%;
-    height: 100%;
+    white-space: nowrap; /* Prevent text from wrapping */
+    width: 100%; /* Ensure the text spans the available width */
     margin: 0;
-    line-height: 50px;
     text-align: center;
     transform: translateX(100%);
     animation: scrolling 15s linear infinite;
@@ -71,6 +69,8 @@ header h1 {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
+
+
 
 .topnav {
     background-color: #784734; /* Deep brown */
@@ -276,4 +276,37 @@ footer .bottom-left {
         font-size: 18px;
         padding: 10px 15px;
     }
+}
+
+.text-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-image img {
+    max-width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rotate effect for Cezve */
+.rotate img {
+    transition: 1s ease;
+}
+
+.rotate img:hover {
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+}
+
+/* Grow effect for Turk Kahvesi */
+.grow img {
+    transition: 1s ease;
+}
+
+.grow img:hover {
+    transform: scale(1.2);
+    transition: 1s ease;
 }
