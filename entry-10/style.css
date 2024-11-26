@@ -6,12 +6,8 @@
 
 
 body {
-    font-family: 'Quicksand', sans-serif; 
-    background-color: #fef7ec;
+    background-color: #fef7ec; /* Match the light beige color of the textboxes */
     color: #3e2a1f;
-    position: relative;
-    padding: 40px;
-    text-align: center;
 }
 
 body::before {
@@ -37,11 +33,13 @@ header {
 }
 
 header h1 {
-    font-family: 'Quicksand', sans-serif; 
-    font-size: 2.5em;
-    margin: 0;
-    color: #4c3b28; /* Deep coffee brown */
-}
+    font-size: 5rem; /* Make title much larger */
+    color: #3e2a1f;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px; /* Increase space below the title */
+  }
+
+
 
 .scrolling-text {
     height: 50px;
@@ -127,6 +125,7 @@ header h1 {
     color: #784734; /* Rich brown */
     display: block;
     transition: 0.3s;
+    text-align: center; /* Center text within links */
 }
 
 .sidenav a:hover {
@@ -144,21 +143,27 @@ header h1 {
 .content-wrapper {
     margin-left: 270px; /* Adjusted for side nav width */
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #fef7ec;
     color: #3e2a1f;
     max-width: 800px;
-    margin-top: 80px; /* To avoid overlap with fixed top nav */
+    margin-top: 60px; /* To avoid overlap with fixed top nav */
 }
 
 .box {
-    background-color: #fff8f0; /* Very light beige */
-    margin: 20px 0;
-    padding: 20px;
+    background-color: #fef7ec; /* Same background as the body for uniformity */
+    margin: 10px 0; /* Reduced top and bottom margin */
+    padding: 15px; /* Reduced padding */
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    height: 300px; /* Fixed height for the box */
-    overflow-y: auto;
+    text-align: left;
+    width: 80%; /* Wider width for all boxes */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Allow precise placement of images */
+}
+
+#section5 {
+    width: 90%; /* Wider specifically for the Turkish Coffee Recipe section */
 }
 
 .box h2, .box h3 {
@@ -278,35 +283,51 @@ footer .bottom-left {
     }
 }
 
-.text-image {
+
+
+.side-images {
+    position: fixed;
+    right: 80px;
+    top: 150px; /* Adjust top value as needed */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    gap: 20px; /* Space between images */
 }
 
-.text-image img {
-    max-width: 40%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Image styles for Cezve and Turk Kahvesi */
+.side-images img {
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+    border: none; /* No border around images */
+    border-radius: 0; /* No rounded corners */
+    box-shadow: none; /* No shadow styling */
+    transition: 1s ease; /* Smooth transition for effects */
+}
+
+/* Position for Cezve - on top */
+.side-images .cezve {
+    align-self: flex-start; /* Align Cezve at the top of the container */
+}
+
+/* Position for Turk Kahvesi - on the bottom */
+.side-images .turk-kahvesi {
+    align-self: flex-end; /* Align Turk Kahvesi at the bottom of the container */
+    
 }
 
 /* Rotate effect for Cezve */
-.rotate img {
-    transition: 1s ease;
-}
-
-.rotate img:hover {
-    transform: rotateZ(-10deg);
+.side-images .rotate img:hover {
+    transform: rotateZ(-10deg); /* Keep rotate effect */
     transition: 1s ease;
 }
 
 /* Grow effect for Turk Kahvesi */
-.grow img {
+.side-images .grow img:hover {
+    transform: scale(1.3); /* Increase the grow effect */
     transition: 1s ease;
 }
 
-.grow img:hover {
-    transform: scale(1.2);
-    transition: 1s ease;
+.side-images .turk-kahvesi img {
+    width: 100px; /* Smaller size */
+    height: auto; /* Maintain aspect ratio */
 }
