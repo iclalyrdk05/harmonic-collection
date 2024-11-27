@@ -163,6 +163,14 @@ header h1 {
     position: relative; /* Allow precise placement of images */
 }
 
+.box:hover {
+    background-color: #d8c6a8; /* Changes background color on hover */
+    transform: scale(1.05); /* Slightly scales up the box */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+
 #section5 {
     width: 90%; /* Wider specifically for the Turkish Coffee Recipe section */
 }

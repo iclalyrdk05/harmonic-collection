@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif; 
-    background-color: #e0f7fa;
+    background-color: #fafbfc;
     color: #333; 
 }
 
@@ -130,7 +130,6 @@ header h1 {
 .content-wrapper {
     margin-left: 400px; 
     padding: 20px;
-    background-color: #ffffff;
     color: #333;
     max-width: 800px;
 }
@@ -139,15 +138,26 @@ header h1 {
 
 .box {
     background-color: #fafafa;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 10px auto; /* Push the box to the right */
+    padding: 15px; /* Reduce padding inside the boxes */
+    border-radius: 10px; /* Slightly smaller rounded corners */
     text-align: center;
-    height: 250px;
+    width: 50%; /* Set width to 50% of the parent container */
+    max-width: 600px; /* Limit the maximum width for larger screens */
+    height: auto; /* Let the height adjust automatically based on content */
     overflow-y: auto;
-    margin-left: 40px; 
+    float: right; /* Push the box to the right */
+    clear: both; /* Ensure proper stacking if there are multiple boxes */
 }
+
+
+.box:hover {
+    background-color: #ffe082; /* Changes background color on hover */
+    transform: scale(1.05); /* Slightly scales up the box */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
 
 .box h2, .box h3 {
     font-family: 'Quicksand', sans-serif;
@@ -258,6 +268,14 @@ body {
     padding: 40px;
     color: #ffffff;
     text-align: center;
+}
+
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 180; /* Remove default padding */
+    height: 140%; /* Ensure the body and html cover the full height of the viewport */
+    width: 100%; /* Ensure the body and html cover the full width of the viewport */
+    position: relative; /* Ensure body is positioned relative for the pseudo-element */
 }
 
 body::before {
