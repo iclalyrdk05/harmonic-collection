@@ -17,51 +17,50 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('images/turkish-coffee-bg.jpeg') center/cover no-repeat;
     opacity: 0.7; /* Softer opacity for elegance */
     z-index: -1; /* Position it behind the body content */
 }
 
 header {
-    background: url('images/pattern-gold-blue.jpeg') center/cover no-repeat;
-    padding: 40px;
+    padding: 20px; /* Reduced padding for smaller title box */
     opacity: 0.85;
     color: #fef7ec; /* Light beige text */
-    text-align: center;
+    text-align: center; /* Center text */
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 5rem; /* Make title much larger */
+    font-size: 4.5rem; /* Slightly smaller title */
     color: #3e2a1f;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 30px; /* Increase space below the title */
-  }
-
+    margin-bottom: 30px;
+}
 
 
 .scrolling-text {
     height: 50px;
     overflow: hidden;
-    position: relative;
+    position: firefox;
     margin: 20px 0;
     background-color: #fef7ec;
     padding: 10px;
+    text-align: center; /* Center the scrolling text */
 }
 
 .scrolling-text h3 {
-    font-family: 'Playfair Display', serif; /* Cursive-like font */
+    font-family: 'Playfair Display', serif;
     font-size: 1.5em;
-    color: #af4d4d; /* Red accent from Turkish carpets */
+    color: #af4d4d;
     position: absolute;
-    white-space: nowrap; /* Prevent text from wrapping */
-    width: 100%; /* Ensure the text spans the available width */
+    white-space: nowrap;
+    width: 100%;
     margin: 0;
     text-align: center;
     transform: translateX(100%);
     animation: scrolling 15s linear infinite;
 }
+
 
 @keyframes scrolling {
     0% { transform: translateX(100%); }
@@ -73,6 +72,7 @@ header h1 {
 .topnav {
     background-color: #784734; /* Deep brown */
     overflow: hidden;
+    font-family: 'Quicksand', sans-serif; 
     position: fixed;
     width: calc(100% - 250px);
     top: 0;
@@ -109,6 +109,7 @@ header h1 {
     height: 100%;
     width: 250px;
     position: fixed;
+    font-family: 'Quicksand', sans-serif; 
     top: 0;
     left: 0;
     background-color: #fef7ec;
@@ -296,7 +297,7 @@ footer .bottom-left {
 
 /* Image styles for Cezve and Turk Kahvesi */
 .side-images img {
-    width: 400px; /* Adjust size as needed */
+    width: 350px; /* Adjust size as needed */
     height: auto;
     border: none; /* No border around images */
     border-radius: 0; /* No rounded corners */
@@ -328,6 +329,10 @@ footer .bottom-left {
 }
 
 .side-images .turk-kahvesi img {
-    width: 100px; /* Smaller size */
-    height: auto; /* Maintain aspect ratio */
+    width: 70px; /* Smaller size for the Turk Kahvesi image */
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: 1s ease;
 }
