@@ -1,248 +1,280 @@
 /* Global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #FFEFDB;
-    color: #333;
-    text-align: center;
-    line-height: 1.6; /* Adds readability for text */
-  }
-  
-  /* Header styling */
-  h1 {
-    font-size: 5rem; /* Make title much larger */
-    color: #8aa51d; /* New color for the title */
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 30px; /* Increase space below the title */
-  }
-  
-  /* Subtitle Styling (h2) */
-  h2 {
-    font-size: 2.5rem; /* Increase subtitle size */
-    color: #6b8116; /* Subtitle color */
-    margin-bottom: 25px; /* Add space between subtitle and text box */
-  }
-  
-  /* Paragraph styling inside .text-box */
-  .text-box p {
-    font-size: 1.1rem; /* Slightly larger font */
-    line-height: 1.6; /* More readable line height */
-    margin-bottom: 15px; /* Add spacing between paragraphs */
-    color: #151a02;
-  }
-  
-  /* Sidebar Styling */
-  .sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #E1E48E;
-    padding-top: 60px;
-    z-index: 101;
-    transition: all 0.3s ease;
-    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sidenav a {
-    padding: 14px 32px;
-    font-size: 22px;
-    color: #b1624a;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    background-color: #ffd966;
-    color: white;
-  }
-  
-  .sidenav a.active {
-    background-color: #af4d4d;
-    color: #fef7ec;
-  }
-  
-  /* Top Navigation */
-  .topnav {
-    background-color: #E1E48E;
-    overflow: hidden;
-    position: fixed;
-    width: calc(100% - 250px);
-    top: 0;
-    left: 250px;
-    z-index: 100;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #b1624a;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .topnav a:hover {
-    background-color: #ffd966;
-    color: white;
-  }
-  
-  .topnav a.active {
-    background-color: #af4d4d;
-    color: white;
-  }
-  
-  /* Content Wrapper */
-  .content-wrapper {
-    margin-left: 250px;
-    margin-top: 60px; /* Adjust for topnav and sidebar */
-    padding: 20px;
-    max-width: 1100px;
-    margin-right: auto;
-  }
-  
-  /* Flexbox for main content */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #FFEFDB;
+  color: #333;
+  text-align: center;
+  line-height: 1.6; /* Adds readability for text */
+}
+
+/* Header styling */
+h1 {
+  font-size: 5rem; /* Make title much larger */
+  color: #8aa51d; /* New color for the title */
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px; /* Increase space below the title */
+}
+
+/* Subtitle Styling (h2) */
+h2 {
+  font-size: 2.5rem; /* Increase subtitle size */
+  color: #6b8116; /* Subtitle color */
+  margin-bottom: 25px; /* Add space between subtitle and text box */
+}
+
+/* Paragraph styling inside .text-box */
+.text-box p {
+  font-size: 1.1rem; /* Slightly larger font */
+  line-height: 1.6; /* More readable line height */
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+  color: #151a02;
+}
+
+/* Sidebar Styling */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #E1E48E;
+  padding-top: 60px;
+  z-index: 101;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a {
+  padding: 14px 32px;
+  font-size: 22px;
+  color: #b1624a;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #ffd966;
+  color: white;
+}
+
+.sidenav a.active {
+  background-color: #af4d4d;
+  color: #fef7ec;
+}
+
+/* Top Navigation */
+.topnav {
+  background-color: #E1E48E;
+  overflow: hidden;
+  position: fixed;
+  width: calc(100% - 250px);
+  top: 0;
+  left: 250px;
+  z-index: 100;
+}
+
+.topnav a {
+  float: left;
+  color: #b1624a;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ffd966;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #af4d4d;
+  color: white;
+}
+
+.scrolling-text {
+  height: 50px;
+  overflow: hidden;
+  position: firefox;
+  margin: 20px 0;
+  padding: 10px;
+  text-align: center; 
+  border: none; /* Remove any border */
+  background-color: transparent; /* Remove the background color */
+}
+
+
+
+.scrolling-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  color: #481010;
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
+  margin: 40;
+  text-align: center;
+  transform: translateX(100%);
+  animation: scrolling 20s linear infinite;
+}
+
+
+@keyframes scrolling {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+/* Content Wrapper */
+.content-wrapper {
+  margin-left: 350px;
+  margin-top: 60px; /* Adjust for topnav and sidebar */
+  padding: 20px;
+  max-width: 1100px;
+  margin-right: auto;
+}
+
+/* Flexbox for main content */
+.content {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsive behavior */
+}
+
+/* Styling for Text Box */
+.text-box {
+  width: 60%; /* Narrow the text box */
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: left;
+}
+
+.text-box h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6b8116;
+}
+
+/* Content Box Styling */
+.box {
+  background-color: #f0f7b2;
+  color: rgb(8, 0, 0);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+  font-size: 2.5rem;
+  color: #6b8116;
+}
+
+.box p {
+  font-size: 1.2rem;
+  color: #151a02;
+  line-height: 1.6;
+}
+
+/* Section for tips or smaller content */
+.tips {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #c3c923;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  color: #333;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: #ffd966;
+  color: white;
+}
+
+/* Footer styling */
+footer {
+  background-color: #a2b9a5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
   .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap; /* Ensures responsive behavior */
-  }
-  
-  /* Styling for Text Box */
-  .text-box {
-    width: 60%; /* Narrow the text box */
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333;
-    text-align: left;
-  }
-  
-  .text-box h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #6b8116;
-  }
-  
-  /* Content Box Styling */
-  .box {
-    background-color: #f0f7b2;
-    color: rgb(8, 0, 0);
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    width: 70%;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .box h2 {
-    font-size: 2.5rem;
-    color: #6b8116;
-  }
-  
-  .box p {
-    font-size: 1.2rem;
-    color: #151a02;
-    line-height: 1.6;
-  }
-  
-  /* Section for tips or smaller content */
-  .tips {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    background-color: #E1E48E;
-    border-radius: 8px;
-    padding: 20px;
-    width: 30%;
-    text-align: center;
-    color: #333;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-  }
-  
-  .card:hover {
-    background-color: #ffd966;
-    color: white;
-  }
-  
-  /* Footer styling */
-  footer {
-    background-color: #a2b9a5;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 40px;
-  }
-  
-  footer p {
-    font-size: 1.2rem;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media screen and (max-width: 768px) {
-    .content {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .text-box {
-      width: 80%;
-    }
-  
-    .box {
-      width: 90%;
-    }
-  
-    .card {
-      width: 48%; /* Adjust card width for smaller screens */
-    }
   }
-  
-  @media screen and (max-width: 600px) {
-    .sidenav {
+
+  .text-box {
+      width: 80%;
+  }
+
+  .box {
+      width: 90%;
+  }
+
+  .card {
+      width: 48%; /* Adjust card width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidenav {
       width: 200px;
-    }
-  
-    .topnav {
+  }
+
+  .topnav {
       width: 100%;
       position: fixed;
       left: 0;
       top: 0;
-    }
-  
-    .content-wrapper {
+  }
+
+  .content-wrapper {
       margin-left: 0;
       padding: 10px;
-    }
-  
-    .text-box {
+  }
+
+  .text-box {
       width: 100%;
-    }
-  
-    .box {
+  }
+
+  .box {
       width: 100%;
-    }
-  
-    .card {
+  }
+
+  .card {
       width: 100%;
       margin-bottom: 10px;
-    }
   }
-  
+}
