@@ -1,4 +1,4 @@
-/* Global styles */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,54 +6,63 @@
 }
 
 body {
+  background-color: #fee5d4; /* Soft peachy beige */
+  color: #4a1c2a; /* Deep burgundy for text */
   font-family: 'Quicksand', sans-serif;
-  background-color: #F9F4E9; /* Lighter cream background */
-  color: #3E2723; /* Dark brown text for a natural, earthy look */
+}
+
+/* Header Section */
+header {
+  padding: 10px;
+  background: none; /* Remove background color */
+  opacity: 1; /* Full opacity */
+  color: #fef7ec; /* Light beige text */
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative; /* Allows positioning adjustments */
+  left: 150px; /* Shift the title slightly to the right */
+}
+
+header h1 {
+  font-size: 4rem;
+  color:  #4a1c2a; /* Dark orange for contrast */
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+
+/* Scrolling Text */
+.scrolling-text {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+  background-color: #fef7ec;
+  padding: 10px;
   text-align: center;
 }
 
-/* Sidebar */
-.sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #8E6273; /* Lighter purple */
-  padding-top: 60px;
-  font-family: 'Quicksand', sans-serif;
-  z-index: 101;
-  transition: all 0.3s ease;
-  box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
-}
-
-.sidenav a {
-  padding: 14px 32px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #F9F4E9; /* Lighter cream color */
-  display: block;
-  transition: 0.3s;
+.scrolling-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  color: #d36f4a; /* Muted dark orange */
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
+  margin: 0;
   text-align: center;
+  transform: translateX(100%);
+  animation: scrolling 15s linear infinite;
 }
 
-.sidenav a:hover {
-  background-color: #9E7A76; /* Warm brown on hover */
-  color: white;
-}
-
-.sidenav a.active {
-  background-color: #4E3B31; /* Dark brown for active link */
-  color: #F9F4E9;
-}
-
-.sidenav a:first-child {
-  font-weight: bolder;
+@keyframes scrolling {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
 /* Top Navigation */
 .topnav {
-  background-color: #9E7A76; /* Muted purple */
+  background-color: #701f2b;
   overflow: hidden;
   position: fixed;
   width: calc(100% - 250px);
@@ -64,52 +73,182 @@ body {
 
 .topnav a {
   float: left;
-  color: #F9F4E9; /* Light cream color */
-  padding: 14px 20px;
+  display: block;
+  color: #fef7ec;
   text-align: center;
+  padding: 14px 20px;
   text-decoration: none;
+  font-size: 1.1em;
 }
 
 .topnav a:hover {
-  background-color: #4E3B31; /* Dark brown on hover */
-  color: white;
+  background-color: #d36f4a;
+  color: #fef7ec;
 }
 
 .topnav a.active {
-  background-color: #4E3B31; /* Dark brown for active link */
-  color: #F9F4E9;
+  background-color: #ff8351; /* Bright dark orange */
+  color: #fef7ec;
+}
+
+/* Side Navigation */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fee5d4;
+  padding-top: 60px;
+  z-index: 101;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a {
+  padding: 14px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #701f2b;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  color: #ff8351;
+  background-color: #d36f4a;
+}
+
+.sidenav a.active {
+  background-color: #701f2b;
+  color: #fef7ec;
 }
 
 /* Content Wrapper */
 .content-wrapper {
-  margin-left: 250px;
+  margin-left: 270px;
+  padding: 20px;
+  background-color: #fee5d4;
+  color: #4a1c2a;
+  max-width: 800px;
   margin-top: 60px;
-  padding: 20px;
 }
 
-/* Content Boxes */
+/* Boxes for Content */
 .box {
-  background-color: #D3A7A1; /* Light muted purple */
-  border-radius: 20px;
-  padding: 20px;
+  background-color: #fff1e4; /* Light beige */
   margin: 20px auto;
-  width: 80%;
-  text-align: left;
+  padding: 20px;
+  border-radius: 15px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 80%;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
-/* Title */
-h1 {
-  font-size: 3rem;
-  color: #4E3B31; /* Dark brown */
-  font-family: 'Playfair Display', serif;
-  margin: 0;
+.box:hover {
+  background-color: #fcd5b4; /* Softer orange */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Text box styles */
-.text-box {
-  overflow-y: auto;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-top: 10px;
+.box h2, .box h3 {
+  font-family: 'Quicksand', sans-serif;
+  color: #701f2b;
+}
+
+.box p {
+  font-size: 1.1em;
+  color: #4a1c2a;
+}
+
+/* Carousel and Gallery */
+.carousel, .gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.carousel img, .gallery img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+  max-width: 300px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Footer */
+footer {
+  background-color: #701f2b;
+  color: #fef7ec;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav.responsive {position: relative;}
+  .content-wrapper {
+      margin-left: 0;
+      padding: 20px;
+  }
+  .sidenav {
+      width: 100%;
+  }
+  .sidenav a {
+      font-size: 18px;
+      padding: 10px 15px;
+  }
+}
+
+.side-images {
+  position: fixed;
+  right: 80px; /* Adjust horizontal position */
+  top: 50px; /* Adjust vertical position for mor-havuc */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increase gap between images */
+}
+
+/* Specific styling for "mor-havuc" image */
+.side-images .rotate img {
+  width: 250px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: 1s ease; /* Smooth transition for hover effects */
+}
+
+/* Specific styling for "salgam" image */
+.side-images .grow img {
+  width: 200px; /* Make the salgam image smaller */
+  height: auto; /* Maintain aspect ratio */
+  transition: 1s ease; /* Smooth transition for hover effects */
+  right: 120px; /* Move salgam image to the left by increasing right value */
+  top: 250px; /* Move salgam image up */
+}
+
+/* Rotate effect for "mor-havuc" */
+.side-images .rotate img:hover {
+  transform: rotateZ(-10deg); /* Keep rotate effect */
+  transition: 1s ease;
+}
+
+/* Grow effect for "salgam" */
+.side-images .grow img:hover {
+  transform: scale(1.2); /* Subtle grow effect */
+  transition: 1s ease;
 }
