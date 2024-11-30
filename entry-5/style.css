@@ -80,11 +80,12 @@ body {
   color: white;
 }
 
-/* Content Wrapper */
 .content-wrapper {
-  margin-left: 250px;
-  margin-top: 60px;
+  margin-left: auto; /* Remove left alignment */
   padding: 20px;
+  max-width: 900px; /* Keep overall content area size */
+  margin-top: 40px;
+  text-align: left; /* Align content to the left for readability */
 }
 
 /* Content Sections */
@@ -100,6 +101,14 @@ body {
   overflow: hidden;
   position: relative;
 }
+
+.box:hover {
+  background-color: #bee097; /* Changes background color on hover */
+  transform: scale(1.05); /* Slightly scales up the box */
+  box-shadow: 0 6px 12px rgba(240, 238, 238, 0.2); /* Adds a shadow effect */
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
 
 .box img {
   width: 200px;
@@ -120,4 +129,258 @@ body {
 h1 {
   font-size: 4rem;
   color: #3D5A45; /* Dark matcha green */
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;" make the layout look like this one in below "* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #b22222;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    padding: 5px;
+    opacity: 1;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 90px; /* Keep this margin for other elements */
+}
+
+header h1 {
+    font-size: 4.5rem;
+    color: #b22222;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    text-align: center; /* This centers the title */
+    margin-left: 0; /* Remove left margin to center the title */
+    margin-right: 80; /* Ensure no right margin to center the title */
+}
+
+.topnav {
+    background-color: #b22222;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    width: calc(100% - 250px);
+    top: 0;
+    left: 250px;
+    z-index: 100;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: #b22222;
+}
+
+.topnav a.active {
+    background-color: #b22222;
+    color: white;
+}
+
+.sidenav a.active {
+    background-color: #b22222;
+    color: #fef7ec;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding-top: 60px;
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sidenav a {
+    padding: 14px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #b22222;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+    background-color: #b22222;
+}
+
+.content-wrapper {
+    margin-left: 550px; /* Keep this margin to allow space for the sidebar */
+    padding: 20px;
+    background-color: white;
+    max-width: 900px; /* Increase max-width to allow more space */
+    margin-top: 40px;
+}
+
+.textbox {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: auto; /* Align to the right */
+  margin-right: 30px; /* Add spacing from the right edge */
+  max-width: 300px; /* Make narrower */
+  text-align: left; /* Align text to the left */
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth hover transition */
+}
+
+.textbox:hover {
+  background-color: #e5d4d4; /* Changes background color on hover */
+  transform: scale(1.05); /* Slightly scales up the box */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+
+.textbox h2 {
+  color: #b22222;
+  font-size: 1.8rem; /* Adjust font size */
+  margin-bottom: 10px; /* Adjust margin to reduce large space at the bottom */
+}
+
+.textbox p {
+  font-size: 0.9em; /* Slightly smaller text */
+  color: #b22222;
+  line-height: 1.5; /* Improve readability */
+}
+
+.small-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.small-box p {
+    font-size: 1em;
+    color: #b22222;
+}
+
+footer {
+    padding: 30px;
+    margin-top: 40px;
+    background-color: #b22222;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Side Images Styles */
+.side-images {
+  position: fixed;
+  top: 80px; /* Keep below navbar */
+  right: 30px; /* Adjust to the right side */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduce spacing for compactness */
+  z-index: 20;
+}
+
+/* Styles for the image container */
+.side-images .photo {
+    position: relative;
+    overflow: hidden; /* Hide overflow to ensure smooth hover effect */
+}
+
+/* First Image ("ayran2") - Smaller size */
+.side-images .photo img {
+    width: 120px; /* Smaller width */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+/* Hover effect for the first image */
+.side-images .photo:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Glow effect */
+.side-images .glow-wrap {
+    overflow: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.side-images .glow {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    top: 0;
+    filter: blur(5px);
+    transform: rotate(45deg) translate(-450%, 0);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Hover effect for the glow */
+.side-images .photo:hover .glow {
+    transform: rotate(45deg) translate(450%, 0);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.side-images .photo:hover img,
+.side-images .photo:hover .glow-wrap {
+    margin-top: 0;
+}
+
+/* Shrink effect for hover on "ayran1" image (and others if you apply the class) */
+.shrink img {
+    transition: 1s ease;
+}
+
+.shrink img:hover {
+    -webkit-transform: scale(0.8); /* Shrinks the image */
+    -ms-transform: scale(0.8); /* Shrinks the image */
+    transform: scale(0.8); /* Shrinks the image */
+    transition: 1s ease;
+}
+
+/* Optional: Styling for the "shrink" class if needed */
+.shrink {
+    display: inline-block; /* Allow for hover effect */
+    overflow: hidden; /* Hide overflow for smooth animation */
+}
+
+/* Ends */
+
+/* Author link styling */
+#author {
+    font-family: Helvetica, Arial;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #888;
+}
+
+#author:hover {
+    color: #111;
+}
