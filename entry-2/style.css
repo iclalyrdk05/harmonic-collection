@@ -171,3 +171,41 @@ header h1 {
   transform: scale(1.05); /* Slight hover effect */
   border-width: 4px; /* Thicker border on hover */
 }
+
+
+.side-images {
+  position: fixed;
+  right: 80px; /* Adjust horizontal position */
+  top: 50px; /* Adjust vertical position for mor-havuc */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increase gap between images */
+}
+
+/* Specific styling for "mor-havuc" image */
+.side-images .rotate img {
+  width: 250px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: 1s ease; /* Smooth transition for hover effects */
+}
+
+/* Specific styling for "salgam" image */
+.side-images .grow img {
+  width: 200px; /* Make the salgam image smaller */
+  height: auto; /* Maintain aspect ratio */
+  transition: 1s ease; /* Smooth transition for hover effects */
+  right: 120px; /* Move salgam image to the left by increasing right value */
+  top: 250px; /* Move salgam image up */
+}
+
+/* Rotate effect for "mor-havuc" */
+.side-images .rotate img:hover {
+  transform: rotateZ(-10deg); /* Keep rotate effect */
+  transition: 1s ease;
+}
+
+/* Grow effect for "salgam" */
+.side-images .grow img:hover {
+  transform: scale(1.2); /* Subtle grow effect */
+  transition: 1s ease;
+}

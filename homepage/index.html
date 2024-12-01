@@ -5,28 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drinks & Occasions</title>
   <style>
-    body {
-      background-color: beige;
-      font-family: Arial, sans-serif;
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    /* Body Styling */
+    body {
+      background-color: #f9f5f0;
+      background-image: url('https://www.transparenttextures.com/patterns/white-paper.png'); /* Textured background */
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Styling */
     h1 {
       text-align: center;
-      color: darkblue;
+      color: #1e3d73;
       font-family: 'Georgia', serif;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
     }
-    a {
-      text-decoration: none;
-      color: darkblue;
-      display: block;
-      margin: 10px 0;
-    }
+
+    /* Navigation Links */
     .centered-content {
       text-align: center;
-      margin-top: 20px;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
+    .centered-content a {
+      text-decoration: none;
+      color: #1e3d73;
+      font-size: 1.1rem;
+      display: block;
+      padding: 10px;
+      margin: 5px 0;
+      transition: all 0.3s ease-in-out;
+      border-radius: 5px;
+    }
+
+    .centered-content a:hover {
+      background-color: #1e3d73;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* Footer Styling */
     footer {
       text-align: center;
       margin-top: 20px;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
@@ -48,6 +87,9 @@
     <a href="../entry-10/">10) Turkish Coffee</a>
   </div>
 
+  <footer>
+    &copy; 2024 Drinks & Occasions. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
-
