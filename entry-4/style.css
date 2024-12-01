@@ -167,3 +167,36 @@ h2 {
   width: 100%;
   text-align: left;
 }
+
+.side-images {
+  position: fixed;
+  right: 50px; /* Adjust horizontal position */
+  top: 290px; /* Adjust vertical position for mor-havuc */
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Reduce gap between images to bring them closer */
+}
+
+.side-images .rotate img {
+  width: 250px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: 1s ease; /* Smooth transition for hover effects */
+}
+
+.side-images .grow img {
+  width: 300px; /* Make the salgam image smaller */
+  height: auto; /* Maintain aspect ratio */
+  transition: 1s ease; /* Smooth transition for hover effects */
+  right: 100px; /* Move salgam image more to the left by decreasing right value */
+  top: 250px; /* Move salgam image up */
+}
+
+.side-images .rotate img:hover {
+  transform: rotateZ(-10deg); /* Keep rotate effect */
+  transition: 1s ease;
+}
+
+.side-images .grow img:hover {
+  transform: scale(1.2); /* Subtle grow effect */
+  transition: 1s ease;
+}

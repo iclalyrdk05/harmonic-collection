@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif; 
-    background-color: #fafbfc;
+    background-color: #F2EBDF; /* Set the background color to match the textboxes */
     color: #333; 
 }
 
@@ -61,7 +61,7 @@ header h1 {
 
 
 .topnav {
-    background-color: #ff80ab;
+    background-color: #E47576;
     overflow: hidden;
     position: fixed;
     width: calc(100% - 250px);
@@ -80,7 +80,7 @@ header h1 {
 }
 
 .topnav a:hover {
-    background-color: #ffe082;
+    background-color: #A02E33;
     color: #333;
 }
 
@@ -89,7 +89,7 @@ header h1 {
 }
 
 .topnav a.active {
-    background-color: #ff4081;
+    background-color: #A02E33;
     color: white;
 }
 
@@ -100,7 +100,7 @@ header h1 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: #E47576;
     padding-top: 60px;
     z-index: 101;
     transition: all 0.3s ease;
@@ -111,18 +111,18 @@ header h1 {
     padding: 14px 32px;
     text-decoration: none;
     font-size: 22px;
-    color: #ff80ab;
+    color: #fbf9f9;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
     color: #00bcd4;
-    background-color: #ffe082;
+    background-color: #A02E33;
 }
 
 .sidenav a.active {
-    background-color: #ff4081;
+    background-color: #A02E33;
     color: white;
 }
 
@@ -136,7 +136,7 @@ header h1 {
 
 
 .box {
-    background-color: #fafafa;
+    background-color: #F2EBDF;
     margin: 10px auto 10px 0; /* Push the box to the left */
     padding: 15px; /* Reduce padding inside the boxes */
     border-radius: 10px; /* Slightly smaller rounded corners */
@@ -147,14 +147,16 @@ header h1 {
     overflow-y: auto;
     float: left; /* Push the box to the left */
     clear: both; /* Ensure proper stacking if there are multiple boxes */
+    border: 3px solid transparent; /* Initial border */
 }
 
 
 .box:hover {
-    background-color: #ffe082; /* Changes background color on hover */
+    border-color: #A02E33; /* Changes background color on hover */
     transform: scale(1.05); /* Slightly scales up the box */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    box-shadow: 40 6px 12px rgba(205, 197, 197, 0.2); /* Adds a shadow effect */
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    border-width: 4;
 }
 
 
@@ -179,19 +181,6 @@ header h1 {
 .carousel img {
     width: 100%;
     max-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.gallery img {
-    width: 50px;
-    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -265,7 +254,7 @@ footer .bottom-left {
 body {
     position: relative;
     padding: 40px;
-    color: #ffffff;
+    color: #F2EBDF;
     text-align: center;
 }
 
@@ -277,17 +266,7 @@ html, body {
     position: relative; /* Ensure body is positioned relative for the pseudo-element */
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ff80ab;
-    opacity: 0.8; /* Set the opacity of the background image */
-    z-index: -1; /* Position it behind the body content */
-}
+
 
 
 header {
