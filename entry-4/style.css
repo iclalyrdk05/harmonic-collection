@@ -7,22 +7,22 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #FFEFDB;
-  color: #333;
+  background-color: #f9f3cc; /* Light pastel yellow background */
+  color: #333; /* Dark text for readability */
   text-align: center;
 }
 
 h1 {
   font-size: 5rem; /* Make title much larger */
-  color: #8aa51d; /* New color for the title */
+  color: #0a3b23; /* Dark version of light cyan color */
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px; /* Increase space below the title */
 }
 
 /* Subtitle Styling (h2) */
 h2 {
-  font-size: 2.5rem; /* Increase subtitle size */
-  color: #6b8116; /* Subtitle color */
+  font-size: 1.5rem; /* Increase subtitle size */
+  color: #0e3d25; /* Dark version of light green for subtitle */
   margin-bottom: 25px; /* Add space between subtitle and text box */
 }
 
@@ -31,7 +31,7 @@ h2 {
   font-size: 1.1rem; /* Slightly larger font */
   line-height: 1.6; /* More readable line height */
   margin-bottom: 15px; /* Add spacing between paragraphs */
-  color: #151a02;
+  color: #3b4a25; /* Dark greenish tone for text */
 }
 
 /* Sidebar */
@@ -41,7 +41,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #E1E48E;
+  background-color: #E1E48E; /* Light pastel lime green background */
   padding-top: 60px;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
 }
@@ -49,7 +49,7 @@ h2 {
 .sidenav a {
   padding: 14px 32px;
   font-size: 22px;
-  color: #b1624a;
+  color: #2a4c3d; /* Dark version of cyan for links */
   display: block;
   text-align: center;
   text-decoration: none;
@@ -57,18 +57,18 @@ h2 {
 }
 
 .sidenav a:hover {
-  background-color: #ffd966;
+  background-color: #b8bb5c; /* Slightly darker shade than background */
   color: white;
 }
 
 .sidenav a.active {
-  background-color: #af4d4d;
-  color: #fef7ec;
+  background-color: #b8bb5c; /* Darker shade for active state */
+  color: #fef7ec; /* Light off-white for active state */
 }
 
 /* Top Navigation */
 .topnav {
-  background-color: #E1E48E;
+  background-color: #E1E48E; /* Light pastel lime green */
   overflow: hidden;
   position: fixed;
   width: calc(100% - 250px);
@@ -79,19 +79,19 @@ h2 {
 
 .topnav a {
   float: left;
-  color: #b1624a;
+  color: #2a4c3d; /* Dark version of cyan for text */
   padding: 14px 20px;
   text-align: center;
   text-decoration: none;
 }
 
 .topnav a:hover {
-  background-color: #ffd966;
+  background-color: #b8bb5c; /* Slightly darker shade than background */
   color: white;
 }
 
 .topnav a.active {
-  background-color: #af4d4d;
+  background-color: #b8bb5c; /* Darker shade for active state */
   color: white;
 }
 
@@ -104,25 +104,62 @@ h2 {
 
 /* Content Sections */
 .box {
-  background-color: #f0f7b2;
-  color: rgb(8, 0, 0);
-  margin: 20px auto;
+  background-color: #f9f3cc; /* Light pastel yellow background */
+  color: #3b4a25; /* Dark greenish text */
+  margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
-  width: 70%;
-  text-align: center;
+  width: 60%;
+  text-align: left;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 0;
+}
+
+.box:hover {
+  background-color: #fce98a; /* Slightly darker yellow on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+  transform: translateY(-5px); /* Slightly lift the box */
 }
 
 /* Flexbox for content */
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
 
 .text-box {
   width: 60%; /* Narrow the text box */
+  text-align: left;
+}
 
-  
+.recipe-box {
+  background-color: #f9f3cc; /* Light pastel yellow background */
+  color: #3b4a25; /* Dark greenish text */
+  margin: 10px auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 65%;
+  height: auto;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.recipe-box:hover {
+  background-color: #fce98a; /* Slightly darker yellow on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.recipe-box .text-box {
+  font-size: 1rem; /* Smaller font size for a more compact look */
+  line-height: 1.6;
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+}

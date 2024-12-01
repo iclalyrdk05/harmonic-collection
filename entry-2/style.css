@@ -39,6 +39,7 @@ header h1 {
   color: #513e07; /* Added a color to match the original theme */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for effect */
   margin: -50;
+  left: -50;
 }
 
 .sidenav {
@@ -136,12 +137,30 @@ header h1 {
   overflow-y: auto;
 }
 
-.box img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin-right: 20px;
+.box h2 {
+  margin-left: auto; /* Push the title to the right */
+  text-align: right; /* Ensure text alignment is consistent */
+  padding-right: 20px; /* Optional: Adds spacing between the title and the right edge */
+  font-size: 1.5em; /* Adjust title size for emphasis */
 }
+
+.text-box {
+  background-color: #bf623c; /* Rich red-brown */
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%; /* Matches overall layout */
+  margin: 0 auto;
+  text-align: left;
+  float: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.text-box:hover {
+  background-color: #c6ae83; /* Lighter gold on hover */
+  transform: scale(1.05); /* Slight hover effect */
+}
+
 
 .box:hover {
   background-color: #c6ae83; /* Lighter gold on hover */

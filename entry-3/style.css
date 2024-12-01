@@ -19,21 +19,24 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Subtitle Styling (h2) */
 h2 {
-  font-size: 2rem; /* Increase subtitle size */
+  font-size: 1.5rem; /* Make subtitles narrower */
   color: #af4d4d; /* Subtitle color */
-  margin-bottom: 15px; /* Space between subtitle and body text */
+  margin-bottom: 20px; /* Space between subtitle and body text */
 }
 
-/* Paragraph styling inside .text-box */
+.text-box {
+  font-size: 1.2rem; /* Make body text wider */
+  line-height: 1; /* Increase readable line height */
+  margin: 0; /* Remove margin around text box */
+}
+
 .text-box p {
-  font-size: 1.1rem; /* Slightly larger font */
-  line-height: 1.6; /* More readable line height */
-  margin-bottom: 15px; /* Add spacing between paragraphs */
+  font-size: 1rem; /* Increase font size for paragraphs */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-bottom: 10px; /* Slightly larger spacing between paragraphs */
 }
 
-/* Sidebar */
 .sidenav {
   height: 100%;
   width: 250px;
@@ -47,7 +50,7 @@ h2 {
 
 .sidenav a {
   padding: 14px 32px;
-  font-size: 22px;
+  font-size: 20px; /* Slightly smaller font size */
   color: #b1624a;
   display: block;
   text-align: center;
@@ -65,7 +68,6 @@ h2 {
   color: #fef7ec;
 }
 
-/* Top Navigation */
 .topnav {
   background-color: #E1E48E;
   overflow: hidden;
@@ -79,7 +81,7 @@ h2 {
 .topnav a {
   float: left;
   color: #b1624a;
-  padding: 14px 20px;
+  padding: 12px 18px; /* Reduce padding for smaller nav items */
   text-align: center;
   text-decoration: none;
 }
@@ -94,34 +96,70 @@ h2 {
   color: white;
 }
 
-/* Content Wrapper */
 .content-wrapper {
   margin-left: 250px;
   margin-top: 60px;
   padding: 20px;
 }
 
-/* Content Sections */
 .box {
   background-color: #FFB6C1; /* Cocktail pink background */
   color: rgb(15, 1, 1);
   margin: 20px auto;
-  padding: 20px;
+  padding: 25px; /* Reduce padding for smaller textboxes */
   border-radius: 8px;
-  width: 70%;
+  width: 50%; /* Make the box narrower */
   height: auto;
-  text-align: center;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Push text box to the left */
+  align-items: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  margin-left: 50%; /* Push the box to the right */
 }
 
-.box img {
-  width: 200px;
-  height: auto;
-  margin-top: 20px;
+/* Hover Effect */
+.box:hover {
+  background-color: #ffd966; /* Change background color on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+  transform: translateY(-5px); /* Slightly lift the box */
 }
 
+/* Content Styling */
 .content {
-  display: flex;
-  justify
+  text-align: left; /* Align text to the left */
+  width: 40%; /* Reduce text box width */
+  margin-left: 10px; /* Push the content more to the left */
+}
+
+.recipe-box {
+  background-color: #FFB6C1; /* Soft pink background */
+  color: #333; /* Darker text color for readability */
+  margin: 10px auto; /* Separate the recipe box from others */
+  padding: 30px; /* More padding for spacious look */
+  border-radius: 12px; /* Rounded corners */
+  width: 65%; /* Wider box */
+  height: auto;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center-align text */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.recipe-box:hover {
+  background-color: #ffd966; /* Light gold on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance hover shadow */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.recipe-box .text-box {
+  font-size: 1rem; /* Smaller font size for a more compact look */
+  line-height: 1.6; /* Slightly adjusted line height for readability */
+  margin: 0 auto; /* Center the text horizontally */
+  width: 100%; /* Set text box width to 100% */
+  text-align: left; /* Push the text more to the left */
+}
