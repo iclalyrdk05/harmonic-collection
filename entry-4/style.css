@@ -7,14 +7,14 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #f9f3cc; /* Light pastel yellow background */
+  background-color: #faf8eb; /* Light pastel yellow background */
   color: #333; /* Dark text for readability */
   text-align: center;
 }
 
 h1 {
   font-size: 5rem; /* Make title much larger */
-  color: #0a3b23; /* Dark version of light cyan color */
+  color: #c4ca12; /* Dark version of light cyan color */
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px; /* Increase space below the title */
 }
@@ -104,21 +104,23 @@ h2 {
 
 /* Content Sections */
 .box {
-  background-color: #f9f3cc; /* Light pastel yellow background */
+  background-color: #faf8eb; /* Light pastel yellow background */
   color: #3b4a25; /* Dark greenish text */
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
-  width: 60%;
+  width: 50%;
   text-align: left;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin-left: 0;
+  border: 3px solid transparent; 
 }
 
 .box:hover {
-  background-color: #fce98a; /* Slightly darker yellow on hover */
+  border-color: #c4ca12; /* Slightly darker yellow on hover */
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow */
   transform: translateY(-5px); /* Slightly lift the box */
+  border-width: 4;
 }
 
 /* Flexbox for content */
@@ -135,7 +137,7 @@ h2 {
 }
 
 .recipe-box {
-  background-color: #f9f3cc; /* Light pastel yellow background */
+  background-color: #faf8eb; /* Light pastel yellow background */
   color: #3b4a25; /* Dark greenish text */
   margin: 10px auto;
   padding: 30px;
@@ -148,12 +150,14 @@ h2 {
   align-items: center;
   text-align: center;
   transition: all 0.3s ease;
+  border: 3px solid transparent; 
 }
 
 .recipe-box:hover {
-  background-color: #fce98a; /* Slightly darker yellow on hover */
+  border-color: #c4ca12; /* Slightly darker yellow on hover */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
+  border-width: 4;
 }
 
 .recipe-box .text-box {

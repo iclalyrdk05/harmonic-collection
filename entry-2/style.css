@@ -7,7 +7,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: #f5f5f5; /* Light background for a clean look */
-  color: #0c0909; /* Darker text for better contrast */
+  color: #4b2e1e; /* Dark brown text */
   padding: 40px;
   position: relative;
   text-align: center;
@@ -28,7 +28,7 @@ header {
   text-align: right;
   margin-bottom: 10px; /* Increased space from the topnav */
   padding: 40px;
-  color: #0c0909; /* Darker text */
+  color: #4b2e1e; /* Dark brown text */
   position: sticky;
   border-radius: 10px;
 }
@@ -36,7 +36,7 @@ header {
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 5em; /* Increased title size */
-  color: #513e07; /* Added a color to match the original theme */
+  color: #513e07; /* A color to match the original theme */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for effect */
   margin: -50;
   left: -50;
@@ -95,7 +95,7 @@ header h1 {
 
 .topnav a:hover {
   background-color: #bf623c; /* Rich red-brown */
-  color: #0c0909; /* Dark text */
+  color: #4b2e1e; /* Dark brown text */
 }
 
 .content-wrapper {
@@ -123,8 +123,8 @@ header h1 {
 }
 
 .box {
-  background-color: #bf623c; /* Rich red-brown */
-  color: #fff;
+  background-color: #f5f5f5; /* Light background for a clean look */
+  color: #4b2e1e; /* Dark brown text */
   margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
@@ -145,8 +145,8 @@ header h1 {
 }
 
 .text-box {
-  background-color: #bf623c; /* Rich red-brown */
-  color: #fff;
+  background-color: #f5f5f5; /* Light background */
+  color: #4b2e1e; /* Dark brown text */
   padding: 20px;
   border-radius: 8px;
   width: 70%; /* Matches overall layout */
@@ -157,11 +157,17 @@ header h1 {
 }
 
 .text-box:hover {
-  background-color: #c6ae83; /* Lighter gold on hover */
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #c6ae83; /* Lighter gold on hover */
   transform: scale(1.05); /* Slight hover effect */
+  border-width: 4px; 
 }
 
-
 .box:hover {
-  background-color: #c6ae83; /* Lighter gold on hover */
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #c6ae83; /* Lighter gold border on hover */
+  transform: scale(1.05); /* Slight hover effect */
+  border-width: 4px; /* Thicker border on hover */
 }

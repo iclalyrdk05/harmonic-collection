@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #F4F8F3; /* Light matcha green background */
+  background-color: #f2f5eb; /* Light matcha green background */
   color: #333;
   text-align: center;
 }
@@ -90,7 +90,7 @@ body {
 
 /* Content Sections */
 .box {
-  background-color: #D5E1B7; /* Soft matcha color for the box background */
+  background-color: #f2f5eb; /* Soft matcha color for the box background */
   color: #3D5A45; /* Dark matcha green */
   margin: 20px auto;
   padding: 20px;
@@ -100,29 +100,49 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  border: 3px solid transparent;
 }
 
 .box:hover {
-  background-color: #bee097; /* Changes background color on hover */
+  border-color: #bee097; /* Changes background color on hover */
   transform: scale(1.05); /* Slightly scales up the box */
   box-shadow: 0 6px 12px rgba(240, 238, 238, 0.2); /* Adds a shadow effect */
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
 
-
-.box img {
-  width: 200px;
-  height: auto;
-  margin: 10px 0;
+/* Scrollable text box */
+.textbox {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: auto; /* Align to the right */
+  margin-right: 30px; /* Add spacing from the right edge */
+  max-width: 300px; /* Make narrower */
+  text-align: left; /* Align text to the left */
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; /* Smooth hover transition */
+  border: 3px solid transparent; /* Initially transparent border */
 }
 
-/* Scrollable text box */
-.text-box {
-  overflow-y: scroll;
-  height: 180px; /* Fixed height for scrollable area */
-  padding-right: 10px;
-  font-size: 1.1rem; /* Increase text size */
-  line-height: 1.6; /* Improve line spacing */
+
+.textbox:hover {
+  border-color: #b22222; /* Changes border color on hover */
+  transform: scale(1.05); /* Slightly scales up the box */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  border-width: 4px; /* Slightly thicker border on hover */
+}
+
+.textbox h2 {
+  color: #b22222;
+  font-size: 1.8rem; /* Adjust font size */
+  margin-bottom: 10px; /* Adjust margin to reduce large space at the bottom */
+}
+
+.textbox p {
+  font-size: 0.9em; /* Slightly smaller text */
+  color: #b22222;
+  line-height: 1.5; /* Improve readability */
 }
 
 /* Title */
@@ -243,12 +263,14 @@ header h1 {
   max-width: 300px; /* Make narrower */
   text-align: left; /* Align text to the left */
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth hover transition */
+  border: 3px solid transparent; 
 }
 
 .textbox:hover {
-  background-color: #e5d4d4; /* Changes background color on hover */
+  border-color: #e5d4d4; /* Changes background color on hover */
   transform: scale(1.05); /* Slightly scales up the box */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  border-width: 4;
 }
 
 
@@ -285,102 +307,3 @@ footer {
     border-radius: 10px;
 }
 
-/* Side Images Styles */
-.side-images {
-  position: fixed;
-  top: 80px; /* Keep below navbar */
-  right: 30px; /* Adjust to the right side */
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Reduce spacing for compactness */
-  z-index: 20;
-}
-
-/* Styles for the image container */
-.side-images .photo {
-    position: relative;
-    overflow: hidden; /* Hide overflow to ensure smooth hover effect */
-}
-
-/* First Image ("ayran2") - Smaller size */
-.side-images .photo img {
-    width: 120px; /* Smaller width */
-    height: auto;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
-}
-
-/* Hover effect for the first image */
-.side-images .photo:hover img {
-    transform: scale(1.1); /* Slight zoom effect on hover */
-}
-
-/* Glow effect */
-.side-images .glow-wrap {
-    overflow: visible;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-}
-
-.side-images .glow {
-    display: block;
-    position: absolute;
-    width: 40%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.2);
-    top: 0;
-    filter: blur(5px);
-    transform: rotate(45deg) translate(-450%, 0);
-    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-/* Hover effect for the glow */
-.side-images .photo:hover .glow {
-    transform: rotate(45deg) translate(450%, 0);
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.side-images .photo:hover img,
-.side-images .photo:hover .glow-wrap {
-    margin-top: 0;
-}
-
-/* Shrink effect for hover on "ayran1" image (and others if you apply the class) */
-.shrink img {
-    transition: 1s ease;
-}
-
-.shrink img:hover {
-    -webkit-transform: scale(0.8); /* Shrinks the image */
-    -ms-transform: scale(0.8); /* Shrinks the image */
-    transform: scale(0.8); /* Shrinks the image */
-    transition: 1s ease;
-}
-
-/* Optional: Styling for the "shrink" class if needed */
-.shrink {
-    display: inline-block; /* Allow for hover effect */
-    overflow: hidden; /* Hide overflow for smooth animation */
-}
-
-/* Ends */
-
-/* Author link styling */
-#author {
-    font-family: Helvetica, Arial;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-decoration: none;
-    position: fixed;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #888;
-}
-
-#author:hover {
-    color: #111;
-}
