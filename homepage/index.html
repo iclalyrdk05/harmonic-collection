@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drinks & Occasions</title>
+  <title>Drinks & Cultures</title>
   <style>
     /* General Reset */
     * {
@@ -31,34 +31,6 @@
       font-size: 2.5rem;
     }
 
-    /* Navigation Links */
-    .centered-content {
-      text-align: center;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 600px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .centered-content a {
-      text-decoration: none;
-      color: #1e3d73;
-      font-size: 1.1rem;
-      display: block;
-      padding: 10px;
-      margin: 5px 0;
-      transition: all 0.3s ease-in-out;
-      border-radius: 5px;
-    }
-
-    .centered-content a:hover {
-      background-color: #1e3d73;
-      color: #fff;
-      transform: scale(1.05);
-    }
-
     /* Footer Styling */
     footer {
       text-align: center;
@@ -67,29 +39,94 @@
       font-size: 0.9rem;
       color: #666;
     }
+
+    /* Image container styling */
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .images .grow {
+      flex: 1;
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .images .grow img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .images .grow:hover {
+      transform: scale(1.05);
+    }
+
+    /* Specific Styling for the Soda Image */
+    .images .grow img[alt="Sparkling Drinks"] {
+      max-width: 200px; /* Make the Soda image smaller */
+      width: 100%;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Drinks & Occasions</h1>
+  <h1>Drinks & Cultures</h1>
 
-  <div class="centered-content">
-    <a href="../homepage/">Home</a>
-    <a href="../entry-1/">1) Turkish Tea</a>
-    <a href="../entry-2/">2) Espresso</a>
-    <a href="../entry-3/">3) Cocktails</a>
-    <a href="../entry-4/">4) Lemonade</a>
-    <a href="../entry-5/">5) Matcha</a>
-    <a href="../entry-6/">6) Salgam</a>
-    <a href="../entry-7/">7) Herbal Tea</a>
-    <a href="../entry-8/">8) Sparkling Drinks</a>
-    <a href="../entry-9/">9) Ayran</a>
-    <a href="../entry-10/">10) Turkish Coffee</a>
+  <!-- Images Section -->
+  <div class="images">
+    <div class="grow">
+      <a href="../entry-1/">
+        <img src="images/cayhome.png" alt="Cezve">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-2/">
+        <img src="images/espressohome.png" alt="Espresso">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-3/">
+        <img src="images/pembecocktail.png" alt="Cocktails">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-4/">
+        <img src="images/limonata.png" alt="Lemonade">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-5/">
+        <img src="images/matchahome.png" alt="Matca">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-6/">
+        <img src="images/turp.png" alt="Salgam">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-7/">
+        <img src="images/tea.png" alt="Herbal Tea">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-8/">
+        <img src="images/soda.png" alt="Sparkling Drinks" style="max-width: 200px; width: 70%;">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-9/">
+        <img src="images/ayran1.png" alt="Ayran">
+      </a>
+    </div>
+    <div class="grow">
+      <a href="../entry-10/">
+        <img src="images/turk kahvesi.png" alt="Turkish Coffee" style="max-width: 200px; width: 70%;">
+      </a>
+    </div>
   </div>
-
-  <footer>
-    &copy; 2024 Drinks & Occasions. All Rights Reserved.
-  </footer>
 
 </body>
 </html>
