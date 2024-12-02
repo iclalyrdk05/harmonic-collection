@@ -43,7 +43,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #E1E48E;
+  background-color: #cdcc79;
   padding-top: 60px;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
 }
@@ -51,7 +51,7 @@ h2 {
 .sidenav a {
   padding: 14px 32px;
   font-size: 22px; /* Slightly smaller font size */
-  color: #b1624a;
+  color: #9B3418;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -59,17 +59,17 @@ h2 {
 }
 
 .sidenav a:hover {
-  background-color: #ffd966;
+  background-color: #9B3418;
   color: white;
 }
 
 .sidenav a.active {
-  background-color: #af4d4d;
+  background-color: #9B3418;
   color: #fef7ec;
 }
 
 .topnav {
-  background-color: #E1E48E;
+  background-color: #cdcc79;
   overflow: hidden;
   position: fixed;
   width: calc(100% - 250px);
@@ -80,19 +80,19 @@ h2 {
 
 .topnav a {
   float: left;
-  color: #b1624a;
+  color: #9B3418;
   padding: 12px 18px; /* Reduce padding for smaller nav items */
   text-align: center;
   text-decoration: none;
 }
 
 .topnav a:hover {
-  background-color: #ffd966;
+  background-color: #9B3418;
   color: white;
 }
 
 .topnav a.active {
-  background-color: #af4d4d;
+  background-color: #9B3418;
   color: white;
 }
 
@@ -175,13 +175,13 @@ h2 {
   top: 150px; /* Adjust top value to position the images vertically */
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between images */
+  gap: 10px; /* Reduced space between images */
   z-index: 102; /* Ensure it's above other content */
 }
 
 /* Image Sizes and Transition */
 .side-images img {
-  width: 200px; /* Set image width */
+  width: 220px; /* Set image width */
   height: auto;
   border-radius: 0; /* No rounded corners */
   box-shadow: none; /* Remove box shadow */
@@ -189,25 +189,27 @@ h2 {
 }
 
 /* Position for Cezve - on top */
-.side-images .latte {
-  align-self: flex-start; /* Align Cezve at the top */
+.side-images .shaker {
+  align-self: flex-start; /* Align shaker at the top */
+  width: 150px; /* Make the shaker smaller */
+  transition: 0.5s ease; /* Smooth transition for size changes */
 }
 
-/* Position for Turk Kahvesi - on the bottom */
-.grow .whisk {
-  align-self: flex-end; /* Align Turk Kahvesi at the bottom */
-  transform: rotate(180deg); /* Rotate the Whisk image by 180 degrees */
-  width: 120px; /* Smaller size for Whisk image */
-}
-
-/* Hover Effects */
-.side-images .rotate img:hover {
-  transform: rotateZ(-10deg); /* Rotate on hover */
+/* Grow effect for Cocktail (latte) image */
+.side-images .shaker:hover {
+  transform: scale(1.2); /* Scale up the Cocktail (latte) image on hover */
   transition: 1s ease;
 }
 
-.grow img:hover {
-  transform: scale(1.3); /* Scale up image on hover */
+/* Shake effect for the shaker */
+.side-images .shaker:hover {
+  animation: shake 0.5s infinite; /* Apply the shake animation on hover */
+  transform: scale(1.1); /* Slight grow effect on shaker while shaking */
+}
+
+/* Rotate effect for "mor-havuc" */
+.side-images .rotate img:hover {
+  transform: rotateZ(-10deg); /* Rotate on hover */
   transition: 1s ease;
 }
 
@@ -220,13 +222,8 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .side-images img {
-    width: 100px; /* Further reduce size for mobile screens */
+    width: 120px; /* Further reduce size for mobile screens */
   }
-}
-
-/* Apply shake effect specifically to the whisk image */
-.grow .whisk:hover {
-  animation: shake 0.5s infinite;
 }
 
 /* Shake animation */

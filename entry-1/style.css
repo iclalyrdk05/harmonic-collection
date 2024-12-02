@@ -135,7 +135,7 @@ header h1 {
 
 /* Image Sizes and Transition */
 .side-images img {
-  width: 200px; /* Set image width */
+  width: 250px; /* Increased image width */
   height: auto;
   border-radius: 0; /* No rounded corners */
   box-shadow: none; /* Remove box shadow */
@@ -151,7 +151,7 @@ header h1 {
 .grow .whisk {
   align-self: flex-end; /* Align Turk Kahvesi at the bottom */
   transform: rotate(180deg); /* Rotate the Whisk image by 180 degrees */
-  width: 120px; /* Smaller size for Whisk image */
+  width: 150px; /* Increased size for Whisk image */
 }
 
 /* Hover Effects */
@@ -168,13 +168,13 @@ header h1 {
 /* Adjusting Image Size for Smaller Screens */
 @media screen and (max-width: 768px) {
   .side-images img {
-    width: 200px; /* Reduce size for smaller screens */
+    width: 220px; /* Reduced but still larger for tablets */
   }
 }
 
 @media screen and (max-width: 600px) {
   .side-images img {
-    width: 100px; /* Further reduce size for mobile screens */
+    width: 120px; /* Slightly larger for mobile screens */
   }
 }
 
